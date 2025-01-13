@@ -1,3 +1,19 @@
-button {
+img {
+  height: 900px;
+  width: 900px;
+}
+
+.toolbar {
+  margin-bottom: 10px;
+}
+
+#smoke {
   position: absolute;
+  opacity: 50%;
+}
+
+#callout {
+  position: absolute;
+  opacity: 70%;
+  color: white;
 }
