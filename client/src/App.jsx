@@ -7,6 +7,8 @@ import { useSelector } from 'react-redux'
 
 function App() {
   const [count, setCount] = useState(0)
+  const calloutsEnabled = useSelector(
+    (state) => state.callouts.value)
 
   const handleClick = (event) => {
     console.log("TODO")
@@ -21,7 +23,8 @@ function App() {
           <img src={dust2} onClick={handleClick}></img>
           <button style={{left: "210px", top: "200px"}} 
           onClick={handleClick} id='smoke'>test</button>
-          <label  style={{left: "80px", top: "100px"}} 
+          <label style={{left: "80px", top: "100px", 
+          display: calloutsEnabled ? "block" : "none"}} 
           id='callout'>test label</label>
         </TransformComponent>
       </TransformWrapper>
