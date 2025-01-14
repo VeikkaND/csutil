@@ -17,3 +17,25 @@ img {
   opacity: 70%;
   color: white;
 }
+
+.tutorial {
+  position: absolute;
+  border: solid 1px white;
+  width: 400px;
+  height: 200px;
+  align-items: start;
+  background-color: black;
+  z-index: 1;
+}
+
+.tutorial button {
+  width: 40px;
+  height: 40px;
+  align-self:flex-start
+}
+
+.tutorial img {
+  max-width: fit-content;
+  max-height: 150px;
+  align-self: center;
+}

@@ -10,8 +10,6 @@ function ToolBar() {
         const val = !callouts
         toggleCallouts(val)
         dispatch(setCallouts(val))
-        //TODO toggle callouts on map
-        console.log("TODO: toggle callouts")
     }
 
     return(
