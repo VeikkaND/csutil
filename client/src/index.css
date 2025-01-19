@@ -51,6 +51,7 @@ img {
   position: absolute;
   opacity: 90%;
   color: white;
+  font-size: 16px;
 }
 
 .tutorial {
