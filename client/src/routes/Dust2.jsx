@@ -6,10 +6,10 @@ import Smoke from "../components/Smoke"
 import dust2 from "../../../maps/dust2.png"
 import NavBar from "../components/NavBar"
 import Origin from "../components/Origin"
+import Callout from "../components/Callout"
 
 function Dust2() {
-    const calloutsEnabled = useSelector(
-        (state) => state.callouts.value)
+    
 
     return(
     <div>
@@ -23,9 +23,7 @@ function Dust2() {
                 <Smoke left={500} top={300} name={"test_spot"}/>
                 <Origin left={450} top= {370} 
                 parent={"test_spot"} rotate={40}/>
-                <label style={{left: "80px", top: "100px", 
-                display: calloutsEnabled ? "block" : "none"}} 
-                id='callout'>test label</label>
+                <Callout left={80} top={100} name={"test"}/>
             </TransformComponent>
         </TransformWrapper>
     </div>
