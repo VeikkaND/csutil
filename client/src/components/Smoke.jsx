@@ -7,6 +7,8 @@ function Smoke({left, top, name}) {
     const dispatch = useDispatch()
     const smokeSelected = useSelector(
         (state) => state.smoke.value)
+    const smokesEnabled = useSelector(
+        (state) => state.smokes.value)
 
     const handleClick = (event) => {
         console.log("TODO")
@@ -20,7 +22,7 @@ function Smoke({left, top, name}) {
     return(
         <>
             <button style={{left: `${left}px`, top: `${top}px`, 
-            display: smokeSelected != name && smokeSelected != null ? 
+            display: (smokeSelected != name && smokeSelected != null) || !smokesEnabled ? 
             "none" : "block"}} onClick={handleClick} 
             id='smoke'></button>
             <Tutorial name={name} />

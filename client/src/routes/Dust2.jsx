@@ -18,11 +18,13 @@ function Dust2() {
         <TransformWrapper doubleClick={{disabled: true}}>
             <TransformComponent wrapperStyle={{margin: "auto"}}>
                 <img src={dust2}></img>
-                <Smoke left={210} top={200} name={"bdoor"}/>
+                <Smoke left={200} top={180} name={"bdoor"}/>
+                <Smoke left={200} top={90} name={"window"}/>
                 <Smoke left={80} top={280} name={"tunnel1"}/>
                 <Smoke left={500} top={300} name={"test_spot"}/>
                 <Origin left={450} top= {370} 
                 parent={"test_spot"} rotate={40}/>
+
                 <Callout left={195} top={180} name={"B DOORS"}/>
                 <Callout left={175} top={275} name={"CAR"}/>
                 <Callout left={210} top={105} name={"WINDOW"}/>

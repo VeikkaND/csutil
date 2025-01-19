@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router"
 import { useDispatch } from "react-redux"
 import { setCallouts } from "../reducers/calloutSlice"
+import { setSmokes } from "../reducers/smokesSlice"
 
 function NavBar() {
     const navigate = useNavigate()
@@ -8,6 +9,7 @@ function NavBar() {
     
     const handleReturn = () => {
         dispatch(setCallouts(true))
+        dispatch(setSmokes(true))
         navigate("/")
     }
 
