@@ -13,7 +13,7 @@ function NavBar() {
 
     return(
         <div className="navbar">
-            <h1 onClick={handleReturn}>CSutil</h1>
+            <h1 onClick={handleReturn}></h1>
         </div>
     )
 }

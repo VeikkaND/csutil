@@ -1,3 +1,28 @@
+body {
+  background-color: #212121;
+}
+
+h1 {
+  border-bottom: solid 1px gray;
+  margin: auto;
+  width: fit-content;
+  text-align: center;
+}
+
+h1:hover {
+  cursor: pointer;;
+}
+
+h1::before {
+  content: "CS";
+  color: rgb(255, 183, 50);
+}
+
+h1::after {
+  content: "util";
+  color: rgb(50, 78, 172);
+}
+
 img {
   height: 900px;
   width: 900px;
@@ -5,6 +30,10 @@ img {
 
 .toolbar {
   margin-bottom: 10px;
+}
+
+.toolbar label {
+  color: white;
 }
 
 #smoke {

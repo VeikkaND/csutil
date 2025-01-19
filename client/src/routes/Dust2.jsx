@@ -3,7 +3,7 @@ import { TransformWrapper,
     TransformComponent } from "react-zoom-pan-pinch"
 import ToolBar from "../components/Toolbar"
 import Smoke from "../components/Smoke"
-import dust2 from "../../../maps/dust2.jpg"
+import dust2 from "../../../maps/dust2.png"
 import NavBar from "../components/NavBar"
 import Origin from "../components/Origin"
 
@@ -16,7 +16,7 @@ function Dust2() {
         <NavBar />
         <ToolBar /> 
         <TransformWrapper doubleClick={{disabled: true}}>
-            <TransformComponent>
+            <TransformComponent wrapperStyle={{margin: "auto"}}>
                 <img src={dust2}></img>
                 <Smoke left={210} top={200} name={"bdoor"}/>
                 <Smoke left={80} top={280} name={"tunnel1"}/>
