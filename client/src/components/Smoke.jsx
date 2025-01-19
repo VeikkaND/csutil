@@ -22,7 +22,7 @@ function Smoke({left, top, name}) {
             <button style={{left: `${left}px`, top: `${top}px`, 
             display: smokeSelected != name && smokeSelected != null ? 
             "none" : "block"}} onClick={handleClick} 
-            id='smoke'>test</button>
+            id='smoke'></button>
             <Tutorial name={name} />
         </>
         
