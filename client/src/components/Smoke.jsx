@@ -15,7 +15,14 @@ function Smoke({left, top, name}) {
         console.log("TODO")
         if(smokeSelected != name) {
             dispatch(setSmoke(name))
-            dispatch(setCords([left, top]))
+
+            // guide cords logic:
+            // TODO change left value as well if needed (not shown fully)
+            if(top <= 250) {
+                dispatch(setCords([left-175, top+100]))
+            } else {
+                dispatch(setCords([left-175, top-250]))
+            }
         } else {
             dispatch(resetSmoke())
             dispatch(resetCords())
