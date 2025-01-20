@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux"
 import { useState } from "react"
 import { setSmoke, resetSmoke } from "../reducers/smokeSlice"
+import { setCords, resetCords } from "../reducers/cordsSlice"
 import Tutorial from "./Tutorial"
 
 function Smoke({left, top, name}) {
@@ -14,8 +15,10 @@ function Smoke({left, top, name}) {
         console.log("TODO")
         if(smokeSelected != name) {
             dispatch(setSmoke(name))
+            dispatch(setCords([left, top]))
         } else {
             dispatch(resetSmoke())
+            dispatch(resetCords())
         }
         // possibly add multiple throw locations??
     }

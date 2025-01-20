@@ -13,6 +13,8 @@ function App() {
       <NavBar />
       <button onClick={handleRedirect} 
       name='dust2'>dust 2</button>
+      <button onClick={handleRedirect} 
+      name='mirage'>mirage</button>
     </div>
   )
 }
