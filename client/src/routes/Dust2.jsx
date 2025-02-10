@@ -20,8 +20,15 @@ function Dust2() {
                 <img src={dust2}></img>
                 <Smoke left={200} top={180} name={"bdoor"}/>
                 <Smoke left={200} top={90} name={"window"}/>
-                <Smoke left={80} top={280} name={"tunnel1"}/>
-                <Smoke left={500} top={300} name={"test_spot"}/>
+                <Smoke left={73} top={245} name={"blurk"}/>
+                <Smoke left={410} top={335} name={"xbox"}/>
+                <Smoke left={390} top={300} name={"middoor"}/>
+                <Smoke left={700} top={190} name={"cross"}/>
+                <Smoke left={590} top={190} name={"cta"}/>
+                <Smoke left={420} top={190} name={"ctmid"}/>
+                <Smoke left={565} top={190} name={"asetup"}/>
+                <Smoke left={715} top={395} name={"acorner"}/>
+                
                 <Origin left={450} top= {370} 
                 parent={"test_spot"} rotate={40}/>
 
