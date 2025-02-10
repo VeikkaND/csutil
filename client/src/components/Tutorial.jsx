@@ -1,10 +1,12 @@
 import { useSelector, useDispatch } from "react-redux"
 import { resetSmoke } from "../reducers/smokeSlice"
-import ReactPlayer from "react-player"
+import { useState } from "react"
 
 function Tutorial() {
     const selected = useSelector((state) => state.smoke.value)
+    const url = useSelector((state) => state.url.value)
     const dispatch = useDispatch()
+    const [mode, setMode] = useState("video")
 
     const handleClose = () => {
         dispatch(resetSmoke())
@@ -18,7 +20,21 @@ function Tutorial() {
                 <button onClick={handleClose}>close</button>
             </div>
             <div className="content">
-                <img src={`${selected}.png`}></img>
+                <img src={`${selected}.png`} style={{
+                    display: mode == "video" ? "none" : "block"
+                }}></img>
+                {url ? (
+                    <iframe src={url + "?&autoplay=1&mute=1&playlist=5SkRyZYHRp0&loop=1"}
+                    width={700}
+                    height={400}
+                    title="Youtube video player"
+                    allow="autoplay"
+                    
+                    ></iframe>
+                ) : (
+                    <p>loading video...</p>
+                )}
+                
             </div>
         </div>
     )

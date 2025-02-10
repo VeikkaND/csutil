@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux"
 import { useState } from "react"
 import { setSmoke, resetSmoke } from "../reducers/smokeSlice"
+import { resetUrl, setUrl } from "../reducers/urlSlice"
 
 function Smoke({left, top, name, url}) {
     const dispatch = useDispatch()
@@ -13,8 +14,10 @@ function Smoke({left, top, name, url}) {
         console.log("TODO")
         if(smokeSelected != name) {
             dispatch(setSmoke(name))
+            dispatch(setUrl(url))
         } else {
             dispatch(resetSmoke())
+            dispatch(resetUrl())
         }
         // possibly add multiple throw locations??
     }
