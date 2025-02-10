@@ -7,6 +7,7 @@ import dust2 from "../../../maps/dust2.png"
 import NavBar from "../components/NavBar"
 import Origin from "../components/Origin"
 import Callout from "../components/Callout"
+import Tutorial from "../components/Tutorial"
 
 function Dust2() {
 
@@ -15,22 +16,24 @@ function Dust2() {
     <div>
         <NavBar />
         <ToolBar /> 
+        <Tutorial />
         <TransformWrapper doubleClick={{disabled: true}}>
             <TransformComponent wrapperStyle={{margin: "auto"}}>
                 <img src={dust2}></img>
                 <Smoke left={200} top={180} name={"bdoor"}/>
                 <Smoke left={200} top={90} name={"window"}/>
                 <Smoke left={73} top={245} name={"blurk"}/>
-                <Smoke left={410} top={335} name={"xbox"}/>
+                <Smoke left={410} top={335} name={"xbox"} url={"https://youtu.be/5SkRyZYHRp0"}/>
                 <Smoke left={390} top={300} name={"middoor"}/>
                 <Smoke left={700} top={190} name={"cross"}/>
                 <Smoke left={590} top={190} name={"cta"}/>
                 <Smoke left={420} top={190} name={"ctmid"}/>
                 <Smoke left={565} top={190} name={"asetup"}/>
                 <Smoke left={715} top={395} name={"acorner"}/>
+                <Smoke left={600} top={470} name={"acorner"}/>
                 
-                <Origin left={450} top= {370} 
-                parent={"test_spot"} rotate={40}/>
+                <Origin left={380} top= {755} 
+                parent={"xbox"} rotate={10}/>
 
                 <Callout left={195} top={180} name={"B DOORS"}/>
                 <Callout left={175} top={275} name={"CAR"}/>

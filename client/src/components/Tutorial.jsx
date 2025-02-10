@@ -1,9 +1,9 @@
 import { useSelector, useDispatch } from "react-redux"
 import { resetSmoke } from "../reducers/smokeSlice"
+import ReactPlayer from "react-player"
 
-function Tutorial({name}) {
+function Tutorial() {
     const selected = useSelector((state) => state.smoke.value)
-    const cords = useSelector((state) => state.cords.value)
     const dispatch = useDispatch()
 
     const handleClose = () => {
@@ -11,11 +11,15 @@ function Tutorial({name}) {
     }
 
     return(
-        <div className="tutorial" 
-        style={{display: selected == name ? "flex" : "none", 
-        left: cords[0], top: cords[1]}}>
-            <img src={`${name}.png`}></img>
-            <button onClick={handleClose}>close</button>
+        <div className="tutorial" style={{
+            display: selected == null ? "none" : "block"}}>
+            <div className="topbar">
+                <p>{selected}</p>
+                <button onClick={handleClose}>close</button>
+            </div>
+            <div className="content">
+                <img src={`${selected}.png`}></img>
+            </div>
         </div>
     )
 }
