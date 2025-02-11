@@ -1,10 +1,14 @@
 import { useNavigate } from 'react-router'
 import NavBar from './components/NavBar'
+import { useDispatch } from 'react-redux'
+import { setMap } from "./reducers/mapSlice"
 
 function App() {
   const navigate = useNavigate()
+  const dispatch = useDispatch()
   
   const handleRedirect = (event) => {
+    dispatch(setMap(event.target.name))
     navigate(`${event.target.name}`)
   }
 

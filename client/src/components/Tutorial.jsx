@@ -6,6 +6,7 @@ import { resetUrl } from "../reducers/urlSlice"
 import { resetStyle } from "../reducers/styleSlice"
 
 function Tutorial() {
+    const map = useSelector((state) => state.map.value)
     const selected = useSelector((state) => state.smoke.value)
     const url = useSelector((state) => state.url.value)
     const videoID = useSelector((state) => state.videoID.value)
@@ -38,7 +39,7 @@ function Tutorial() {
                 )}
                 <div className="info">
                     <h3>Precise:</h3>
-                    <img src={`${selected}.png`}></img>
+                    <img src={`${map}/${selected}.png`}></img>
                     <p>{style}</p>
                 </div>
             </div>
