@@ -23,7 +23,7 @@ function Dust2() {
                 <Smoke left={200} top={180} name={"bdoor"}/>
                 <Smoke left={200} top={90} name={"window"}/>
                 <Smoke left={73} top={245} name={"blurk"}/>
-                <Smoke left={410} top={335} name={"xbox"} url={"https://www.youtube.com/embed/5SkRyZYHRp0?si=daaSUc_qwGkpP-Zv"}/>
+                <Smoke left={410} top={335} name={"xbox"} url={"https://www.youtube.com/embed/5SkRyZYHRp0?si=daaSUc_qwGkpP-Zv"} style={"jt"}/>
                 <Smoke left={390} top={300} name={"middoor"}/>
                 <Smoke left={700} top={190} name={"cross"}/>
                 <Smoke left={590} top={190} name={"cta"}/>

@@ -67,8 +67,8 @@ img {
 .tutorial {
   position: absolute;
   border: solid 1px white;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   left: 0;
   right: 0;
   margin: auto;
@@ -82,15 +82,40 @@ img {
   color: white;
 }
 
-.topbar p {
+.tutorial .topbar p {
   margin: auto;
   margin-left: 10px;
   cursor: pointer;
   font-size: 25px;
 }
 
-.tutorial content {
-  
+.tutorial .content {
+  display: flex;
+  justify-content: center;
+  margin-inline: 20px;
+  gap: 10px;
+}
+
+.tutorial .content iframe {
+  aspect-ratio: 16 / 9;
+  height: 90%;
+  width: 90%;
+}
+
+.tutorial .content .info {
+  color: white;
+}
+
+.tutorial .content .info h3 {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.tutorial .content .info p {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 10px;
 }
 
 .tutorial button {

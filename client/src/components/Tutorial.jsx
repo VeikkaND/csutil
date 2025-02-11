@@ -3,10 +3,13 @@ import { resetSmoke } from "../reducers/smokeSlice"
 import { useState } from "react"
 import { resetID } from "../reducers/videoIDSlice"
 import { resetUrl } from "../reducers/urlSlice"
+import { resetStyle } from "../reducers/styleSlice"
 
 function Tutorial() {
     const selected = useSelector((state) => state.smoke.value)
     const url = useSelector((state) => state.url.value)
+    const videoID = useSelector((state) => state.videoID.value)
+    const style = useSelector((state) => state.style.value)
     const dispatch = useDispatch()
     const [mode, setMode] = useState("video")
 
@@ -14,6 +17,7 @@ function Tutorial() {
         dispatch(resetSmoke())
         dispatch(resetID())
         dispatch(resetUrl())
+        dispatch(resetStyle())
     }
 
     return(
@@ -24,20 +28,19 @@ function Tutorial() {
                 <button onClick={handleClose}>close</button>
             </div>
             <div className="content">
-                <img src={`${selected}.png`} style={{
-                    display: mode == "video" ? "none" : "block"
-                }}></img>
-                {url ? (
-                    <iframe src={url + "?&autoplay=1&mute=1&playlist=5SkRyZYHRp0&loop=1"}
-                    width={700}
-                    height={400}
+                {url && videoID ? (
+                    <iframe src={url + `?&autoplay=1&mute=1&playlist=${videoID}&loop=1&vq=1080hp`}
                     title="Youtube video player"
                     allow="autoplay"
                     ></iframe>
                 ) : (
                     <p>loading video...</p>
                 )}
-                
+                <div className="info">
+                    <h3>Precise:</h3>
+                    <img src={`${selected}.png`}></img>
+                    <p>{style}</p>
+                </div>
             </div>
         </div>
     )

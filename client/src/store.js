@@ -4,6 +4,7 @@ import smokeReducer from "./reducers/smokeSlice"
 import smokesReducer from "./reducers/smokesSlice"
 import urlReducer from "./reducers/urlSlice"
 import videoIDReducer from "./reducers/videoIDSlice"
+import styleReducer from "./reducers/styleSlice"
 
 export default configureStore({
     reducer: {
@@ -12,5 +13,6 @@ export default configureStore({
         smokes: smokesReducer,
         url: urlReducer,
         videoID: videoIDReducer,
+        style: styleReducer
     }
 })
