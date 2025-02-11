@@ -1,6 +1,8 @@
 import { useSelector, useDispatch } from "react-redux"
 import { resetSmoke } from "../reducers/smokeSlice"
 import { useState } from "react"
+import { resetID } from "../reducers/videoIDSlice"
+import { resetUrl } from "../reducers/urlSlice"
 
 function Tutorial() {
     const selected = useSelector((state) => state.smoke.value)
@@ -10,6 +12,8 @@ function Tutorial() {
 
     const handleClose = () => {
         dispatch(resetSmoke())
+        dispatch(resetID())
+        dispatch(resetUrl())
     }
 
     return(
@@ -29,7 +33,6 @@ function Tutorial() {
                     height={400}
                     title="Youtube video player"
                     allow="autoplay"
-                    
                     ></iframe>
                 ) : (
                     <p>loading video...</p>

@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux"
-import { useState } from "react"
 import { setSmoke, resetSmoke } from "../reducers/smokeSlice"
 import { resetUrl, setUrl } from "../reducers/urlSlice"
+import { setID, resetID } from "../reducers/videoIDSlice"
 
 function Smoke({left, top, name, url}) {
     const dispatch = useDispatch()
@@ -11,13 +11,21 @@ function Smoke({left, top, name, url}) {
         (state) => state.smokes.value)
 
     const handleClick = (event) => {
-        console.log("TODO")
         if(smokeSelected != name) {
+            //set video ID
+            try {
+                const regex = /(?<=\/embed\/).*?(?=\?)/
+                const id = url.match(regex)
+                dispatch(setID(id[0]))
+            } catch(err) {
+                console.log("ID not found")
+            }
             dispatch(setSmoke(name))
             dispatch(setUrl(url))
         } else {
             dispatch(resetSmoke())
             dispatch(resetUrl())
+            dispatch(resetID())
         }
         // possibly add multiple throw locations??
     }
