@@ -6,6 +6,7 @@ import urlReducer from "./reducers/urlSlice"
 import videoIDReducer from "./reducers/videoIDSlice"
 import styleReducer from "./reducers/styleSlice"
 import mapReducer from "./reducers/mapSlice"
+import tutorialReducer from "./reducers/tutorialSlice"
 
 export default configureStore({
     reducer: {
@@ -16,5 +17,6 @@ export default configureStore({
         videoID: videoIDReducer,
         style: styleReducer,
         map: mapReducer,
+        tutorial: tutorialReducer,
     }
 })

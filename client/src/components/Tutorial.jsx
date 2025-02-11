@@ -4,10 +4,12 @@ import { useState } from "react"
 import { resetID } from "../reducers/videoIDSlice"
 import { resetUrl } from "../reducers/urlSlice"
 import { resetStyle } from "../reducers/styleSlice"
+import { resetTutorial } from "../reducers/tutorialSlice"
 
 function Tutorial() {
     const map = useSelector((state) => state.map.value)
     const selected = useSelector((state) => state.smoke.value)
+    const tutorial = useSelector((state) => state.tutorial.value)
     const url = useSelector((state) => state.url.value)
     const videoID = useSelector((state) => state.videoID.value)
     const style = useSelector((state) => state.style.value)
@@ -19,11 +21,12 @@ function Tutorial() {
         dispatch(resetID())
         dispatch(resetUrl())
         dispatch(resetStyle())
+        dispatch(resetTutorial())
     }
 
     return(
         <div className="tutorial" style={{
-            display: selected == null ? "none" : "block"}}>
+            display: tutorial == null ? "none" : "block"}}>
             <div className="topbar">
                 <p>{selected}</p>
                 <button onClick={handleClose}>close</button>
@@ -39,7 +42,7 @@ function Tutorial() {
                 )}
                 <div className="info">
                     <h3>Precise:</h3>
-                    <img src={`${map}/${selected}.png`}></img>
+                    <img src={`${map}/${tutorial}.png`}></img>
                     <p>{style}</p>
                 </div>
             </div>

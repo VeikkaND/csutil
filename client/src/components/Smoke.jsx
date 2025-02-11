@@ -1,45 +1,27 @@
 import { useDispatch, useSelector } from "react-redux"
 import { setSmoke, resetSmoke } from "../reducers/smokeSlice"
-import { resetUrl, setUrl } from "../reducers/urlSlice"
-import { setID, resetID } from "../reducers/videoIDSlice"
-import { setStyle, resetStyle } from "../reducers/styleSlice"
+import { resetUrl } from "../reducers/urlSlice"
+import { resetID } from "../reducers/videoIDSlice"
+import { resetStyle } from "../reducers/styleSlice"
+import { resetTutorial } from "../reducers/tutorialSlice"
 
-function Smoke({left, top, name, url, style}) {
+function Smoke({left, top, name}) {
     const dispatch = useDispatch()
     const smokeSelected = useSelector(
         (state) => state.smoke.value)
     const smokesEnabled = useSelector(
         (state) => state.smokes.value)
 
-    const handleClick = (event) => {
+    const handleClick = () => {
         if(smokeSelected != name) {
-            //set video ID
-            try {
-                const regex = /(?<=\/embed\/).*?(?=\?)/
-                const id = url.match(regex)
-                dispatch(setID(id[0]))
-            } catch(err) {
-                console.log("ID not found")
-            }
             dispatch(setSmoke(name))
-            dispatch(setUrl(url))
-            //set throw style
-            switch(style) {
-                case "jt":
-                    dispatch(setStyle("Left Click + Jump"))
-                    break;
-                case "t":
-                    dispatch(setStyle("Left Click"))
-                    break;
-            }
-            
         } else {
             dispatch(resetSmoke())
             dispatch(resetUrl())
             dispatch(resetID())
             dispatch(resetStyle())
+            dispatch(resetTutorial())
         }
-        // possibly add multiple throw locations??
     }
     return(
         <>
