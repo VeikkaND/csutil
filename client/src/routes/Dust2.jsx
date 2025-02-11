@@ -20,7 +20,7 @@ function Dust2() {
         <TransformWrapper doubleClick={{disabled: true}}>
             <TransformComponent wrapperStyle={{margin: "auto"}}>
                 <img src={dust2}></img>
-                <Smoke left={200} top={180} name={"bdoor"}/>
+                <Smoke left={200} top={180} name={"bdoor"} url={"https://www.youtube.com/embed/Rn8fFvPyJ28?si=Eqe1fsIILe5xWY0g"} style={"jt"}/>
                 <Smoke left={200} top={90} name={"window"}/>
                 <Smoke left={73} top={245} name={"blurk"}/>
                 <Smoke left={410} top={335} name={"xbox"} url={"https://www.youtube.com/embed/5SkRyZYHRp0?si=daaSUc_qwGkpP-Zv"} style={"jt"}/>
@@ -28,9 +28,9 @@ function Dust2() {
                 <Smoke left={700} top={190} name={"cross"}/>
                 <Smoke left={590} top={190} name={"cta"}/>
                 <Smoke left={420} top={190} name={"ctmid"}/>
-                <Smoke left={565} top={190} name={"asetup"}/>
-                <Smoke left={715} top={395} name={"acorner"}/>
-                <Smoke left={600} top={470} name={"acorner"}/>
+                <Smoke left={565} top={190} name={"asetup"} url={"https://www.youtube.com/embed/wRjpc7hGlvQ?si=u9KQRPnhII1ECZh7"} style={"t"}/>
+                <Smoke left={715} top={395} name={"acorner"} url={"https://www.youtube.com/embed/P7UutENcV9E?si=44bOLEfJJEKpLGtv"} style={"jt"}/>
+                <Smoke left={600} top={470} name={"longdoors"} url={"https://www.youtube.com/embed/jun--xYtOWw?si=X-LhWUbRhHPBGXNh"} style={"jt"}/>
                 
                 <Origin left={380} top= {755} 
                 parent={"xbox"} rotate={10}/>
