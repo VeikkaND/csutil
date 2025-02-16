@@ -19,6 +19,16 @@ function App() {
       name='dust2'>dust 2</button>
       <button onClick={handleRedirect} 
       name='mirage'>mirage</button>
+      <button onClick={handleRedirect} 
+      name='nuke'>nuke</button>
+      <button onClick={handleRedirect} 
+      name='train'>train</button>
+      <button onClick={handleRedirect} 
+      name='inferno'>inferno</button>
+      <button onClick={handleRedirect} 
+      name='ancient'>ancient</button>
+      <button onClick={handleRedirect} 
+      name='anubis'>anubis</button>
     </div>
   )
 }
