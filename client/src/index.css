@@ -71,6 +71,15 @@ img {
   position: absolute;
 }
 
+#line {
+  position: absolute;
+}
+
+#line polyline {
+  stroke-width: 3px;
+  stroke-dasharray: 10px, 10px;
+}
+
 #callout {
   position: absolute;
   opacity: 90%;

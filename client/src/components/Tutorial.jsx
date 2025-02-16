@@ -5,6 +5,7 @@ import { resetID } from "../reducers/videoIDSlice"
 import { resetUrl } from "../reducers/urlSlice"
 import { resetStyle } from "../reducers/styleSlice"
 import { resetTutorial } from "../reducers/tutorialSlice"
+import { resetCords } from "../reducers/cordsSlice"
 
 function Tutorial() {
     const map = useSelector((state) => state.map.value)
@@ -22,6 +23,7 @@ function Tutorial() {
         dispatch(resetUrl())
         dispatch(resetStyle())
         dispatch(resetTutorial())
+        dispatch(resetCords())
     }
 
     return(

@@ -8,6 +8,7 @@ import { setStyle } from "../reducers/styleSlice"
 function Origin({left, top, parent, rotate, name, url, style}) {
     const dispatch = useDispatch()
     const selected = useSelector((state) => state.smoke.value)
+    const cords = useSelector((state) => state.cords.value)
 
     const handleClick = () => {
         //set video ID
@@ -32,12 +33,23 @@ function Origin({left, top, parent, rotate, name, url, style}) {
     }
 
     return(
+        <>
         <button onClick={handleClick} style={{ left: left, top: top, 
             display: selected == parent ? "block" : "none", 
             rotate: `${rotate}deg`}} 
             id="arrow" >
             <img src={"arrow.svg"}></img>
         </button>
+        <svg style={{display: selected == parent ? 
+            "block" : "none"}}
+            id="line" viewBox="0,0,900,900">
+            {cords 
+            ? <polyline points={`${left+10},${top+10} ${cords[0]+25}, ${cords[1]+25}`} fill="none" stroke="yellow"/> 
+            : <p>failed to load</p>}
+            
+        </svg>
+        </>
+        
         
     )
 }
