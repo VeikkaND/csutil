@@ -98,18 +98,44 @@ img {
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 2;
+  border-radius: 10px;
 }
 
 .tutorial .topbar {
   display: flex;
   color: white;
+  margin-bottom: 20px;
 }
 
 .tutorial .topbar p {
   margin: auto;
-  margin-left: 10px;
+  margin-left: 20px;
   cursor: pointer;
   font-size: 25px;
+  padding-bottom: 5px;
+  padding-right: 5%;
+  padding-top: 5px;
+  border-bottom: solid 1px;
+}
+
+.tutorial button {
+  padding-inline: 0px;
+  background-color: rgba(255, 255, 255, 0.178);
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+}
+
+.tutorial button:hover {
+  background-color:crimson;
+  transition-duration: 0.4s;
+}
+
+.tutorial button #close {
+  width: 30px;
+  height: 30px;
+  filter: invert();
 }
 
 .tutorial .content {

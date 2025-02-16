@@ -1,6 +1,5 @@
 import { useSelector, useDispatch } from "react-redux"
 import { resetSmoke } from "../reducers/smokeSlice"
-import { useState } from "react"
 import { resetID } from "../reducers/videoIDSlice"
 import { resetUrl } from "../reducers/urlSlice"
 import { resetStyle } from "../reducers/styleSlice"
@@ -15,7 +14,6 @@ function Tutorial() {
     const videoID = useSelector((state) => state.videoID.value)
     const style = useSelector((state) => state.style.value)
     const dispatch = useDispatch()
-    const [mode, setMode] = useState("video")
 
     const handleClose = () => {
         dispatch(resetSmoke())
@@ -31,7 +29,9 @@ function Tutorial() {
             display: tutorial == null ? "none" : "block"}}>
             <div className="topbar">
                 <p>{selected}</p>
-                <button onClick={handleClose}>close</button>
+                <button onClick={handleClose}>
+                    <img src={"close.svg"} id="close"></img>
+                </button>
             </div>
             <div className="content">
                 {url && videoID ? (
