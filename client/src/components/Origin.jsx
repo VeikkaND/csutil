@@ -5,7 +5,7 @@ import { setUrl } from "../reducers/urlSlice"
 import { setID } from "../reducers/videoIDSlice"
 import { setStyle } from "../reducers/styleSlice"
 
-function Origin({left, top, parent, rotate, name, url, style}) {
+function Origin({left, top, parent, name, url, style}) {
     const dispatch = useDispatch()
     const selected = useSelector((state) => state.smoke.value)
     const cords = useSelector((state) => state.cords.value)
@@ -35,10 +35,8 @@ function Origin({left, top, parent, rotate, name, url, style}) {
     return(
         <>
         <button onClick={handleClick} style={{ left: left, top: top, 
-            display: selected == parent ? "block" : "none", 
-            rotate: `${rotate}deg`}} 
-            id="arrow" >
-            <img src={"arrow.svg"}></img>
+            display: selected == parent ? "block" : "none"}} 
+            id="origin">
         </button>
         <svg style={{display: selected == parent ? 
             "block" : "none"}}

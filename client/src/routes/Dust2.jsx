@@ -32,32 +32,32 @@ function Dust2() {
                 <Smoke left={715} top={395} name={"Long Corner"}/>
                 <Smoke left={600} top={470} name={"Long Doors"}/>
                 
-                <Origin left={380} top={755} 
-                parent={"Xbox"} rotate={10} name={"xbox"} url={"https://www.youtube.com/embed/5SkRyZYHRp0?si=daaSUc_qwGkpP-Zv"} style={"jt"}/>
-                <Origin left={131} top={411} 
-                parent={"B Doors"} rotate={30} name={"bdoor2"} url={"https://www.youtube.com/embed/7T9pNRW6qTg?si=tfU8W7wFUm7Bdwcc"} style={"t"}/>
-                <Origin left={220} top={520} 
-                parent={"B Doors"} rotate={0} name={"bdoor1"} url={"https://www.youtube.com/embed/Rn8fFvPyJ28?si=Eqe1fsIILe5xWY0g"} style={"jt"}/>
-                <Origin left={220} top={520} 
-                parent={"Window"} rotate={0} name={"window"} url={"https://www.youtube.com/embed/beMKOOHC0YQ?si=dCW4_ydhsCbPmcEi"} style={"jt"}/>
-                <Origin left={125} top={415}
-                parent={"B Lurk"} rotate={-25} name={"blurk"} url={"https://www.youtube.com/embed/kX_eQCgjJhk?si=jzQGWS7WbFhPv-80"} style={"t"}/>
-                <Origin left={400} top={750} 
-                parent={"Mid Doors"} rotate={0} name={"middoor"} url={"https://www.youtube.com/embed/5pd3rOSht28?si=06yzzGN8oCFoc8LB"} style={"jt"}/>
-                <Origin left={665} top={405} 
-                parent={"Cross"} rotate={15} name={"cross"} url={"https://www.youtube.com/embed/SboH_azCoe0?si=mVzkpVlBv0XqJNmE"} style={"t"}/>
-                <Origin left={588} top={425} 
-                parent={"CT A"} rotate={5} name={"cta"} url={"https://www.youtube.com/embed/NbTuMrYLe1M?si=C-zM-jAXCTQe735Q"} style={"t"}/>
-                <Origin left={530} top={345}
-                parent={"CT A"} rotate={15} name={"ctshort"} url={"https://www.youtube.com/embed/aTYjWMbj9pQ?si=6J_ePsb3zsQqB4UR"} style={"t"}/>
-                <Origin left={425} top={350} 
-                parent={"CT Mid"} rotate={-35} name={"ctmid"} url={"https://www.youtube.com/embed/EcJMQRoWawM?si=M5-dBeTKIujeE_Ez"} style={"jt"}/>
-                <Origin left={575} top={295} 
-                parent={"A Setup"} rotate={-55} name={"asetup"} url={"https://www.youtube.com/embed/wRjpc7hGlvQ?si=u9KQRPnhII1ECZh7"} style={"t"}/>
-                <Origin left={450} top={750} 
-                parent={"Long Corner"} rotate={40} name={"acorner"} url={"https://www.youtube.com/embed/P7UutENcV9E?si=44bOLEfJJEKpLGtv"} style={"jt"}/>
+                <Origin left={380} top={765} 
+                parent={"Xbox"} name={"xbox"} url={"https://www.youtube.com/embed/5SkRyZYHRp0?si=daaSUc_qwGkpP-Zv"} style={"jt"}/>
+                <Origin left={131} top={435} 
+                parent={"B Doors"} name={"bdoor2"} url={"https://www.youtube.com/embed/7T9pNRW6qTg?si=tfU8W7wFUm7Bdwcc"} style={"t"}/>
+                <Origin left={220} top={540} 
+                parent={"B Doors"} name={"bdoor1"} url={"https://www.youtube.com/embed/Rn8fFvPyJ28?si=Eqe1fsIILe5xWY0g"} style={"jt"}/>
+                <Origin left={220} top={540} 
+                parent={"Window"} name={"window"} url={"https://www.youtube.com/embed/beMKOOHC0YQ?si=dCW4_ydhsCbPmcEi"} style={"jt"}/>
+                <Origin left={125} top={435}
+                parent={"B Lurk"} name={"blurk"} url={"https://www.youtube.com/embed/kX_eQCgjJhk?si=jzQGWS7WbFhPv-80"} style={"t"}/>
+                <Origin left={400} top={770} 
+                parent={"Mid Doors"} name={"middoor"} url={"https://www.youtube.com/embed/5pd3rOSht28?si=06yzzGN8oCFoc8LB"} style={"jt"}/>
+                <Origin left={665} top={425} 
+                parent={"Cross"} name={"cross"} url={"https://www.youtube.com/embed/SboH_azCoe0?si=mVzkpVlBv0XqJNmE"} style={"t"}/>
+                <Origin left={588} top={435} 
+                parent={"CT A"} name={"cta"} url={"https://www.youtube.com/embed/NbTuMrYLe1M?si=C-zM-jAXCTQe735Q"} style={"t"}/>
+                <Origin left={530} top={365}
+                parent={"CT A"} name={"ctshort"} url={"https://www.youtube.com/embed/aTYjWMbj9pQ?si=6J_ePsb3zsQqB4UR"} style={"t"}/>
+                <Origin left={425} top={365} 
+                parent={"CT Mid"} name={"ctmid"} url={"https://www.youtube.com/embed/EcJMQRoWawM?si=M5-dBeTKIujeE_Ez"} style={"jt"}/>
+                <Origin left={580} top={310} 
+                parent={"A Setup"} name={"asetup"} url={"https://www.youtube.com/embed/wRjpc7hGlvQ?si=u9KQRPnhII1ECZh7"} style={"t"}/>
+                <Origin left={450} top={770} 
+                parent={"Long Corner"} name={"acorner"} url={"https://www.youtube.com/embed/P7UutENcV9E?si=44bOLEfJJEKpLGtv"} style={"jt"}/>
                 <Origin left={635} top={165} 
-                parent={"Long Doors"} rotate={185} name={"longdoors"} url={"https://www.youtube.com/embed/jun--xYtOWw?si=X-LhWUbRhHPBGXNh"} style={"jt"}/>
+                parent={"Long Doors"} name={"longdoors"} url={"https://www.youtube.com/embed/jun--xYtOWw?si=X-LhWUbRhHPBGXNh"} style={"jt"}/>
 
                 <Callout left={195} top={180} name={"B DOORS"}/>
                 <Callout left={175} top={275} name={"CAR"}/>
