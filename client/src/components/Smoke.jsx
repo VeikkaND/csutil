@@ -5,6 +5,7 @@ import { resetID } from "../reducers/videoIDSlice"
 import { resetStyle } from "../reducers/styleSlice"
 import { resetTutorial } from "../reducers/tutorialSlice"
 import { setCords, resetCords } from "../reducers/cordsSlice"
+import { resetInfo } from "../reducers/infoSlice"
 
 function Smoke({left, top, name}) {
     const dispatch = useDispatch()
@@ -24,6 +25,7 @@ function Smoke({left, top, name}) {
             dispatch(resetStyle())
             dispatch(resetTutorial())
             dispatch(resetCords())
+            dispatch(resetInfo())
         }
     }
     return(

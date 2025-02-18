@@ -5,6 +5,7 @@ import { resetUrl } from "../reducers/urlSlice"
 import { resetStyle } from "../reducers/styleSlice"
 import { resetTutorial } from "../reducers/tutorialSlice"
 import { resetCords } from "../reducers/cordsSlice"
+import { resetInfo } from "../reducers/infoSlice"
 
 function Tutorial() {
     const map = useSelector((state) => state.map.value)
@@ -13,6 +14,7 @@ function Tutorial() {
     const url = useSelector((state) => state.url.value)
     const videoID = useSelector((state) => state.videoID.value)
     const style = useSelector((state) => state.style.value)
+    const info = useSelector((state) => state.info.value)
     const dispatch = useDispatch()
 
     const handleClose = () => {
@@ -22,6 +24,7 @@ function Tutorial() {
         dispatch(resetStyle())
         dispatch(resetTutorial())
         dispatch(resetCords())
+        dispatch(resetInfo())
     }
 
     return(
@@ -46,6 +49,7 @@ function Tutorial() {
                     <h3>Precise:</h3>
                     <img src={`${map}/${tutorial}.png`}></img>
                     <p>{style}</p>
+                    {info && <p id="info">{info}</p>}
                 </div>
             </div>
         </div>

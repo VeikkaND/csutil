@@ -50,7 +50,7 @@ function Dust2() {
                 parent={"CT A"} name={"cta"} url={"https://www.youtube.com/embed/NbTuMrYLe1M?si=C-zM-jAXCTQe735Q"} style={"t"}/>
                 <Origin left={530} top={365}
                 parent={"CT A"} name={"ctshort"} url={"https://www.youtube.com/embed/aTYjWMbj9pQ?si=6J_ePsb3zsQqB4UR"} style={"t"}/>
-                <Origin left={425} top={365} 
+                <Origin left={425} top={365} info={"Jump while crouched"} 
                 parent={"CT Mid"} name={"ctmid"} url={"https://www.youtube.com/embed/EcJMQRoWawM?si=M5-dBeTKIujeE_Ez"} style={"jt"}/>
                 <Origin left={580} top={310} 
                 parent={"A Setup"} name={"asetup"} url={"https://www.youtube.com/embed/wRjpc7hGlvQ?si=u9KQRPnhII1ECZh7"} style={"t"}/>

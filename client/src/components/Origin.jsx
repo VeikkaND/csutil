@@ -4,8 +4,9 @@ import { setTutorial } from "../reducers/tutorialSlice"
 import { setUrl } from "../reducers/urlSlice"
 import { setID } from "../reducers/videoIDSlice"
 import { setStyle } from "../reducers/styleSlice"
+import { setInfo } from "../reducers/infoSlice"
 
-function Origin({left, top, parent, name, url, style}) {
+function Origin({left, top, parent, name, url, style, info}) {
     const dispatch = useDispatch()
     const selected = useSelector((state) => state.smoke.value)
     const cords = useSelector((state) => state.cords.value)
@@ -29,7 +30,11 @@ function Origin({left, top, parent, name, url, style}) {
             case "t":
                 dispatch(setStyle("Left Click"))
                 break;
+            case "jtr":
+                dispatch(setStyle("Left Click + Jump + Run"))
+                break;
         }
+        if(info) dispatch(setInfo(info))
     }
 
     return(

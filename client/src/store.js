@@ -8,6 +8,7 @@ import styleReducer from "./reducers/styleSlice"
 import mapReducer from "./reducers/mapSlice"
 import tutorialReducer from "./reducers/tutorialSlice"
 import cordsReducer from "./reducers/cordsSlice"
+import infoReducer from "./reducers/infoSlice"
 
 export default configureStore({
     reducer: {
@@ -20,5 +21,6 @@ export default configureStore({
         map: mapReducer,
         tutorial: tutorialReducer,
         cords: cordsReducer,
+        info: infoReducer,
     }
 })
