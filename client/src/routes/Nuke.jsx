@@ -4,6 +4,8 @@ import ToolBar from "../components/Toolbar";
 import Tutorial from "../components/Tutorial";
 import nuke from "../../../maps/nuke.png"
 import Callout from "../components/Callout";
+import Smoke from "../components/Smoke";
+import Origin from "../components/Origin";
 
 function Nuke() {
 
@@ -15,6 +17,27 @@ function Nuke() {
             <TransformWrapper doubleClick={{disabled: true}}>
                 <TransformComponent wrapperStyle={{margin: "auto"}}>
                     <img src={nuke}></img>
+
+                    <Smoke left={500} top={422} name={"A Site"}/>
+                    <Smoke left={485} top={575} name={"Outside CT"}/>
+                    <Smoke left={530} top={565} name={"Outside 1"}/>
+                    <Smoke left={560} top={590} name={"Outside 2"}/>
+                    <Smoke left={460} top={600} name={"Outside T"}/>
+
+                    <Origin left={290} top={510} parent={"A Site"} style={"jt"}
+                    name={"asite"} url={""}/>
+                    <Origin left={590} top={515} parent={"Outside CT"} style={"tr"}
+                    name={"ctoutside"} url={""}/>
+                    <Origin left={270} top={503} parent={"Outside 1"} style={"jt"}
+                    name={"outside1_1"} url={""}/>
+                    <Origin left={260} top={486} parent={"Outside 1"} style={"jt"}
+                    name={"outside1_2"} url={""}/>
+                    <Origin left={270} top={503} parent={"Outside 2"} style={"jt"}
+                    name={"outside2_1"} url={""}/>
+                    <Origin left={260} top={486} parent={"Outside 2"} style={"jt"}
+                    name={"outside2_2"} url={""}/>
+                    <Origin left={370} top={550} parent={"Outside T"} style={"tr"}
+                    name={"outside3"} url={""}/>
 
                     <Callout left={120} top={475} name={"T SPAWN"} size={30}/>
                     <Callout left={390} top={470} name={"LOBBY"} size={25}/>
