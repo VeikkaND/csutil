@@ -6,7 +6,7 @@ import mirage from "../../../maps/mirage.png"
 import Callout from "../components/Callout";
 import Smoke from "../components/Smoke";
 import Origin from "../components/Origin";
-
+import Tutorial from "../components/Tutorial";
 
 function Mirage() {
 
@@ -14,6 +14,7 @@ function Mirage() {
         <div>
             <NavBar />
             <ToolBar />
+            <Tutorial />
             <TransformWrapper doubleClick={{disabled: true}}>
                 <TransformComponent wrapperStyle={{margin: "auto"}}>
                     <img src={mirage}></img>
@@ -32,10 +33,10 @@ function Mirage() {
                     <Smoke left={535} top={635} name={"Palace Lurk"}/>
 
                     <Origin left={804} top={275} parent={"Window"} style={"jtr"}
-                    name={"window"} url={""}/>
+                    name={"window"} url={""} info={"Hold D while throwing"}/>
                     <Origin left={810} top={280} parent={"Mid Cross"} style={"t"}
                     name={"midcross"} url={""}/>
-                    <Origin left={810} top={280} parent={"Connnector"} style={"jt"}
+                    <Origin left={810} top={280} parent={"Connector"} style={"jt"}
                     name={"conn"} url={""}/>
                     <Origin left={810} top={280} parent={"Mid Short"} style={"jt"}
                     name={"shortmid"} url={""}/>

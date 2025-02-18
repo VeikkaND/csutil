@@ -4,6 +4,8 @@ import ToolBar from "../components/Toolbar";
 import Tutorial from "../components/Tutorial";
 import train from "../../../maps/train.png"
 import Callout from "../components/Callout";
+import Smoke from "../components/Smoke";
+import Origin from "../components/Origin";
 
 function Train() {
 
@@ -15,6 +17,38 @@ function Train() {
             <TransformWrapper doubleClick={{disabled: true}}>
                 <TransformComponent wrapperStyle={{margin: "auto"}}>
                     <img src={train}></img>
+
+                    <Smoke left={527} top={500} name={"Connector - A"}/>
+                    <Smoke left={620} top={590} name={"Connector - B"}/>
+                    <Smoke left={530} top={670} name={"B Site 2"}/>
+                    <Smoke left={465} top={670} name={"B Site 1"}/>
+                    <Smoke left={395} top={780} name={"B Heaven Lurk"}/>
+                    <Smoke left={645} top={385} name={"Camera"}/>
+                    <Smoke left={350} top={320} name={"Main"}/>
+                    <Smoke left={380} top={500} name={"Pop Dog"}/>
+                    <Smoke left={520} top={340} name={"Red-Yellow"}/>
+                    <Smoke left={460} top={612} name={"Lower"}/>
+
+                    <Origin left={180} top={120} parent={"Connector - A"} style={"jt"}
+                    name={"aconn"} url={""}/>
+                    <Origin left={240} top={690} parent={"Connector - B"} style={"tr"}
+                    name={"bconn"} url={""}/>
+                    <Origin left={253} top={670} parent={"B Site 2"} style={"jt2"}
+                    name={"bsite2"} url={""}/>
+                    <Origin left={265} top={675} parent={"B Site 1"} style={"jt"}
+                    name={"bsite1"} url={""}/>
+                    <Origin left={310} top={800} parent={"B Heaven Lurk"} style={"t"}
+                    name={"blurk"} url={""}/>
+                    <Origin left={98} top={120} parent={"Camera"} style={"jtr"}
+                    name={"camera"} url={""}/>
+                    <Origin left={865} top={670} parent={"Main"} style={"jtr"}
+                    name={"main"} url={""} info={"Throw when crosshair reaches the gutter"}/>
+                    <Origin left={410} top={140} parent={"Pop Dog"} style={"t"}
+                    name={"popdog"} url={""}/>
+                    <Origin left={98} top={120} parent={"Red-Yellow"} style={"jt"}
+                    name={"redyellow"} url={""}/>
+                    <Origin left={265} top={615} parent={"Lower"} style={"t"}
+                    name={"shortlower"} url={""} info={"Crouch while throwing"}/>
 
                     <Callout left={60} top={135} name={"T SPAWN"} size={30}/>
                     <Callout left={370} top={135} name={"DUMPSTER"}/>
