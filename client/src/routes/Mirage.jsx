@@ -4,6 +4,8 @@ import NavBar from "../components/NavBar";
 import ToolBar from "../components/Toolbar";
 import mirage from "../../../maps/mirage.png"
 import Callout from "../components/Callout";
+import Smoke from "../components/Smoke";
+import Origin from "../components/Origin";
 
 
 function Mirage() {
@@ -15,6 +17,48 @@ function Mirage() {
             <TransformWrapper doubleClick={{disabled: true}}>
                 <TransformComponent wrapperStyle={{margin: "auto"}}>
                     <img src={mirage}></img>
+
+                    <Smoke left={340} top={385} name={"Window"}/>
+                    <Smoke left={550} top={350} name={"Mid Cross"}/>
+                    <Smoke left={425} top={430} name={"Connector"}/>
+                    <Smoke left={400} top={310} name={"Mid Short"}/>
+                    <Smoke left={340} top={240} name={"B Short"}/>
+                    <Smoke left={180} top={230} name={"B Site"}/>
+                    <Smoke left={200} top={330} name={"Market Window"}/>
+                    <Smoke left={130} top={330} name={"Market Door"}/>
+                    <Smoke left={420} top={550} name={"Jungle"}/>
+                    <Smoke left={455} top={545} name={"Stairs"}/>
+                    <Smoke left={380} top={700} name={"CT"}/>
+                    <Smoke left={535} top={635} name={"Palace Lurk"}/>
+
+                    <Origin left={804} top={275} parent={"Window"} style={"jtr"}
+                    name={"window"} url={""}/>
+                    <Origin left={810} top={280} parent={"Mid Cross"} style={"t"}
+                    name={"midcross"} url={""}/>
+                    <Origin left={810} top={280} parent={"Connnector"} style={"jt"}
+                    name={"conn"} url={""}/>
+                    <Origin left={810} top={280} parent={"Mid Short"} style={"jt"}
+                    name={"shortmid"} url={""}/>
+                    <Origin left={575} top={135} parent={"B Short"} style={"t"}
+                    name={"shortb"} url={""}/>
+                    <Origin left={475} top={180} parent={"B Site"} style={"t"}
+                    name={"bsite"} url={""}/>
+                    <Origin left={575} top={135} parent={"Market Window"} style={"jt"}
+                    name={"marketwindow"} url={""}/>
+                    <Origin left={575} top={135} parent={"Market Door"} style={"jt"}
+                    name={"marketdoor"} url={""}/>
+                    <Origin left={730} top={470} parent={"Jungle"} style={"jt"}
+                    name={"jungle1"} url={""}/>
+                    <Origin left={705} top={510} parent={"Jungle"} style={"jt"}
+                    name={"jungle2"} url={""}/>
+                    <Origin left={730} top={470} parent={"Stairs"} style={"jt"}
+                    name={"stairs1"} url={""}/>
+                    <Origin left={705} top={510} parent={"Stairs"} style={"jt2"}
+                    name={"stairs2"} url={""}/>
+                    <Origin left={750} top={470} parent={"CT"} style={"jt"}
+                    name={"ct"} url={""}/>
+                    <Origin left={625} top={665} parent={"Palace Lurk"} style={"t"}
+                    name={"palacelurk"} url={""}/>
 
                     <Callout left={735} top={315} name={"T SPAWN"} size={30}/>
                     <Callout left={590} top={360} name={"TOP MID"}/>

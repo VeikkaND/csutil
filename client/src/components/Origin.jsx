@@ -27,12 +27,20 @@ function Origin({left, top, parent, name, url, style, info}) {
             case "jt":
                 dispatch(setStyle("Left Click + Jump"))
                 break;
+            case "jt2":
+                dispatch(setStyle("Left Right Click + Jump"))
+                break;
             case "t":
                 dispatch(setStyle("Left Click"))
+                break;
+            case "t2":
+                dispatch(setStyle("Left Right Click"))
                 break;
             case "jtr":
                 dispatch(setStyle("Left Click + Jump + Run"))
                 break;
+            
+            
         }
         if(info) dispatch(setInfo(info))
     }
