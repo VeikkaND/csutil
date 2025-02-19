@@ -33,33 +33,33 @@ function Mirage() {
                     <Smoke left={535} top={635} name={"Palace Lurk"}/>
 
                     <Origin left={804} top={275} parent={"Window"} style={"jtr"}
-                    name={"window"} url={""} info={"Hold D while throwing"}/>
+                    name={"window"} url={"https://www.youtube.com/embed/JwiO0wMsloM?si=RhGWJC9BUmA7cryt"} info={"Hold D while throwing"}/>
                     <Origin left={810} top={280} parent={"Mid Cross"} style={"t"}
-                    name={"midcross"} url={""}/>
+                    name={"midcross"} url={"https://www.youtube.com/embed/iIAbUcHi8yQ?si=XGCtJoB5O43iIjyZ"}/>
                     <Origin left={810} top={280} parent={"Connector"} style={"jt"}
-                    name={"conn"} url={""}/>
+                    name={"conn"} url={"https://www.youtube.com/embed/0KpgY2SWYd4?si=JHHb-IAv6lbW8rS5"}/>
                     <Origin left={810} top={280} parent={"Mid Short"} style={"jt"}
-                    name={"shortmid"} url={""}/>
+                    name={"shortmid"} url={"https://www.youtube.com/embed/bGqgI1bEHlI?si=qFbaKc8ItlmeUmZ9"}/>
                     <Origin left={575} top={135} parent={"B Short"} style={"t"}
-                    name={"shortb"} url={""}/>
+                    name={"shortb"} url={"https://www.youtube.com/embed/5W0Lif1yrKs?si=KklMjLWoJzcPCyDs"}/>
                     <Origin left={475} top={180} parent={"B Site"} style={"t"}
-                    name={"bsite"} url={""}/>
+                    name={"bsite"} url={"https://www.youtube.com/embed/N8qeJaVHdU4?si=bjoejQj6cQHcAJVm"}/>
                     <Origin left={575} top={135} parent={"Market Window"} style={"jt"}
-                    name={"marketwindow"} url={""}/>
+                    name={"marketwindow"} url={"https://www.youtube.com/embed/biphvyW833w?si=xM33ACQzcuctYwNk"}/>
                     <Origin left={575} top={135} parent={"Market Door"} style={"jt"}
-                    name={"marketdoor"} url={""}/>
+                    name={"marketdoor"} url={"https://www.youtube.com/embed/hbdzN8JQHuU?si=l5LjET1Ly25qySfz"}/>
                     <Origin left={730} top={470} parent={"Jungle"} style={"jt"}
-                    name={"jungle1"} url={""}/>
+                    name={"jungle1"} url={"https://www.youtube.com/embed/r8XeVA-yM9o?si=TZghNL5AuJqOHBUB"}/>
                     <Origin left={705} top={510} parent={"Jungle"} style={"jt"}
-                    name={"jungle2"} url={""}/>
+                    name={"jungle2"} url={"https://www.youtube.com/embed/8B9C3r43wPg?si=A96PBtJaydXnoIIl"}/>
                     <Origin left={730} top={470} parent={"Stairs"} style={"jt"}
-                    name={"stairs1"} url={""}/>
+                    name={"stairs1"} url={"https://www.youtube.com/embed/hHWKpCQ-aZE?si=UoL8Ou2r3jg4Sq8I"}/>
                     <Origin left={705} top={510} parent={"Stairs"} style={"jt2"}
-                    name={"stairs2"} url={""}/>
+                    name={"stairs2"} url={"https://www.youtube.com/embed/uTZod9ulk6M?si=t-Py9IgG1C2lX0PB"}/>
                     <Origin left={750} top={470} parent={"CT"} style={"jt"}
-                    name={"ct"} url={""}/>
+                    name={"ct"} url={"https://www.youtube.com/embed/-ooqj6MtFGM?si=Hk8TC8GQQbLTtFGF"}/>
                     <Origin left={625} top={665} parent={"Palace Lurk"} style={"t"}
-                    name={"palacelurk"} url={""}/>
+                    name={"palacelurk"} url={"https://www.youtube.com/embed/z_KAjOPC32o?si=f0ZVgv28LtHi5Ycs"} info={"Aim in between the two stains"}/>
 
                     <Callout left={735} top={315} name={"T SPAWN"} size={30}/>
                     <Callout left={590} top={360} name={"TOP MID"}/>

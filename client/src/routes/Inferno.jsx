@@ -4,6 +4,8 @@ import ToolBar from "../components/Toolbar";
 import Tutorial from "../components/Tutorial";
 import inferno from "../../../maps/inferno.png"
 import Callout from "../components/Callout";
+import Smoke from "../components/Smoke";
+import Origin from "../components/Origin";
 
 function Inferno() {
 
@@ -15,6 +17,37 @@ function Inferno() {
             <TransformWrapper doubleClick={{disabled: true}}>
                 <TransformComponent wrapperStyle={{margin: "auto"}}>
                     <img src={inferno}></img>
+
+                    <Smoke left={675} top={415} name={"Arch"}/>
+                    <Smoke left={760} top={620} name={"A - Retake"}/>
+                    <Smoke left={715} top={680} name={"Balcony Lurk"}/>
+                    <Smoke left={440} top={95} name={"Coffin"}/>
+                    <Smoke left={530} top={190} name={"CT - Boost"}/>
+                    <Smoke left={600} top={480} name={"Long"}/>
+                    <Smoke left={760} top={500} name={"Moto"}/>
+                    <Smoke left={595} top={575} name={"Top Mid"}/>
+                    <Smoke left={750} top={660} name={"Truck"}/>
+
+                    <Origin left={480} top={725} parent={"Arch"} style={"jt"}
+                    name={"arch"} url={""}/>
+                    <Origin left={720} top={465} parent={"A - Retake"} style={"jt2"}
+                    name={"aretake"} url={""}/>
+                    <Origin left={660} top={730} parent={"Balcony Lurk"} style={"t"}
+                    name={"balconylurk"} url={""}/>
+                    <Origin left={435} top={370} parent={"Coffin"} style={"jt"}
+                    name={"arch"} url={""}/>
+                    <Origin left={415} top={400} parent={"CT - Boost"} style={"jt"}
+                    name={"ctboost"} url={""}/>
+                    <Origin left={495} top={650} parent={"Long"} style={"jt"}
+                    name={"long"} url={""}/>
+                    <Origin left={480} top={725} parent={"Moto"} style={"jt"}
+                    name={"moto"} url={""}/>
+                    <Origin left={200} top={585} parent={"Top Mid"} style={"jt"}
+                    name={"topmid"} url={""}/>
+                    <Origin left={480} top={725} parent={"Truck"} style={"t"}
+                    name={"truck"} url={""} info={"Crouch while throwing"}/>
+                    <Origin left={595} top={630} parent={"Truck"} style={"t"}
+                    name={"truck2"} url={""}/>
 
                     <Callout left={30} top={590} name={"T SPAWN"} size={30}/>
                     <Callout left={320} top={535} name={"T RAMP"} size={20}/>
