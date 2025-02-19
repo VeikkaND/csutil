@@ -24,6 +24,54 @@ h1::after {
   color: rgb(50, 78, 172);
 }
 
+.mapbuttons {
+  margin: auto;
+  width: fit-content;
+  margin-top: 50px;
+}
+
+.mapbuttons button {
+  margin-inline: 2px;
+  margin-bottom: 10px;
+  width: 180px;
+  height: 600px;
+  border-radius: 15px;
+  background-position: 40% 30%;
+  border: solid 2px dimgray;
+  transition-duration: 0.5s;
+  vertical-align: top;
+}
+
+.mapbuttons button:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  border: solid 2px whitesmoke;
+}
+
+.mapbuttons button #icon {
+  transition-duration: 0.5s;
+  width: 130px;
+  height: 130px;
+  margin-bottom: 20px;
+  top: 0;
+  position: relative;
+}
+
+.mapbuttons button:hover #icon {
+  transition-duration: 0.5s;
+  width: 140px;
+  height: 140px;
+  margin-bottom: 20px;
+  top: -30px;
+}
+
+.mapbuttons button p {
+  color: white;
+  font-size: 35px;
+  font-family: 'Franklin Gothic Medium';
+  margin-top: 50px;
+}
+
 img {
   height: 900px;
   width: 900px;
