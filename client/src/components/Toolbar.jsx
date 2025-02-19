@@ -2,10 +2,19 @@ import { useState } from "react"
 import { useDispatch } from "react-redux"
 import { setCallouts } from "../reducers/calloutSlice"
 import { setSmokes } from "../reducers/smokesSlice"
+import { useSelector } from "react-redux"
+import { resetSmoke } from "../reducers/smokeSlice"
+import { resetID } from "../reducers/videoIDSlice"
+import { resetUrl } from "../reducers/urlSlice"
+import { resetStyle } from "../reducers/styleSlice"
+import { resetTutorial } from "../reducers/tutorialSlice"
+import { resetCords } from "../reducers/cordsSlice"
+import { resetInfo } from "../reducers/infoSlice"
 
 function ToolBar() {
     const [callouts, toggleCallouts] = useState(true)
     const [smokes, toggleSmokes] = useState(true)
+    const selected = useSelector((state) => state.smoke.value)
     const dispatch = useDispatch()
 
     const handleCallouts = () => {
@@ -18,18 +27,31 @@ function ToolBar() {
         const val = !smokes
         toggleSmokes(val)
         dispatch(setSmokes(val))
-        //TODO handle event where smokes get toggled while 
-        //having one selected
+        // reset selected smoke if toggling smokes while
+        // having one selected
+        if(!val && selected) { 
+            dispatch(resetSmoke())
+            dispatch(resetID())
+            dispatch(resetUrl())
+            dispatch(resetStyle())
+            dispatch(resetTutorial())
+            dispatch(resetCords())
+            dispatch(resetInfo())
+        }
     }
 
     return(
         <div className="toolbar">
-            <input type="checkbox" name="callouts" 
-            checked={callouts} onChange={handleCallouts}></input>
-            <label>callouts</label>
-            <input type="checkbox" name="smokes"
-            checked={smokes} onChange={handleSmokes} />
-            <label>smokes</label>
+            <div className="tool">
+                <input type="checkbox" name="callouts" 
+                checked={callouts} onChange={handleCallouts}></input>
+                <label>Callouts</label>
+            </div>
+            <div className="tool">
+                <input type="checkbox" name="smokes"
+                checked={smokes} onChange={handleSmokes} />
+                <label>Smokes</label>
+            </div>
         </div>
     )
 }
