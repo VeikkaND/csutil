@@ -46,6 +46,7 @@ h1::after {
   cursor: pointer;
   transition-duration: 0.5s;
   border: solid 2px whitesmoke;
+  background-position: 40% 29%;
 }
 
 .mapbuttons button #icon {
@@ -93,6 +94,7 @@ img {
   padding: 25px;
   border: solid 1px gray;
   z-index: 1;
+  transition-duration: 0.4s;
 }
 
 #smoke:hover {
@@ -107,7 +109,6 @@ img {
   height: 20px;
   z-index: 3;
   padding: 0px;
-  background-color: orange;
   border: none;
   cursor: pointer;
   border-radius: 10px;

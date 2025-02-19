@@ -46,7 +46,6 @@ function Tutorial() {
                     <p>loading video...</p>
                 )}
                 <div className="info">
-                    <h3>Precise:</h3>
                     <img src={`${map}/${tutorial}.png`}></img>
                     <p>{style}</p>
                     {info && <p id="info">{info}</p>}

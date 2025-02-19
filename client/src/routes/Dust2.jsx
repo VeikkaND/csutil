@@ -57,7 +57,7 @@ function Dust2() {
                 <Origin left={450} top={770} 
                 parent={"Long Corner"} name={"acorner"} url={"https://www.youtube.com/embed/P7UutENcV9E?si=44bOLEfJJEKpLGtv"} style={"jt"}/>
                 <Origin left={635} top={165} 
-                parent={"Long Doors"} name={"longdoors"} url={"https://www.youtube.com/embed/jun--xYtOWw?si=X-LhWUbRhHPBGXNh"} style={"jt"}/>
+                parent={"Long Doors"} name={"longdoors"} url={"https://www.youtube.com/embed/jun--xYtOWw?si=X-LhWUbRhHPBGXNh"} style={"jt"} ct={true}/>
 
                 <Callout left={195} top={180} name={"B DOORS"}/>
                 <Callout left={175} top={275} name={"CAR"}/>

@@ -27,7 +27,7 @@ function Nuke() {
                     <Origin left={290} top={510} parent={"A Site"} style={"jt"}
                     name={"asite"} url={""}/>
                     <Origin left={590} top={515} parent={"Outside CT"} style={"tr"}
-                    name={"ctoutside"} url={""}/>
+                    name={"ctoutside"} url={""} ct={true}/>
                     <Origin left={270} top={503} parent={"Outside 1"} style={"jt"}
                     name={"outside1_1"} url={""}/>
                     <Origin left={260} top={486} parent={"Outside 1"} style={"jt"}

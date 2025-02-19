@@ -31,7 +31,7 @@ function Inferno() {
                     <Origin left={480} top={725} parent={"Arch"} style={"jt"}
                     name={"arch"} url={""}/>
                     <Origin left={720} top={465} parent={"A - Retake"} style={"jt2"}
-                    name={"aretake"} url={""}/>
+                    name={"aretake"} url={""} ct={true}/>
                     <Origin left={660} top={730} parent={"Balcony Lurk"} style={"t"}
                     name={"balconylurk"} url={""}/>
                     <Origin left={435} top={370} parent={"Coffin"} style={"jt"}

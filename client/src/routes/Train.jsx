@@ -42,7 +42,7 @@ function Train() {
                     <Origin left={98} top={120} parent={"Camera"} style={"jtr"}
                     name={"camera"} url={""}/>
                     <Origin left={865} top={670} parent={"Main"} style={"jtr"}
-                    name={"main"} url={""} info={"Throw when crosshair reaches the gutter"}/>
+                    name={"main"} url={""} info={"Throw when crosshair reaches the gutter"} ct={true}/>
                     <Origin left={410} top={140} parent={"Pop Dog"} style={"t"}
                     name={"popdog"} url={""}/>
                     <Origin left={98} top={120} parent={"Red-Yellow"} style={"jt"}
