@@ -30,25 +30,25 @@ function Train() {
                     <Smoke left={460} top={612} name={"Lower"}/>
 
                     <Origin left={180} top={120} parent={"Connector - A"} style={"jt"}
-                    name={"aconn"} url={""}/>
+                    name={"aconn"} url={"https://www.youtube.com/embed/CgorTBu8Mxk?si=4pDJXW1bHn7NxA9L"}/>
                     <Origin left={240} top={690} parent={"Connector - B"} style={"tr"}
-                    name={"bconn"} url={""}/>
+                    name={"bconn"} url={"https://www.youtube.com/embed/W42oxR4SFEQ?si=zFpx9GoS2Qbx5Q4m"}/>
                     <Origin left={253} top={670} parent={"B Site 2"} style={"jt2"}
-                    name={"bsite2"} url={""}/>
+                    name={"bsite2"} url={"https://www.youtube.com/embed/DEb4f3nVFgI?si=QcOst_Bfl-P_JgMw"}/>
                     <Origin left={265} top={675} parent={"B Site 1"} style={"jt"}
-                    name={"bsite1"} url={""}/>
+                    name={"bsite1"} url={"https://www.youtube.com/embed/oT6N1EoZVOA?si=3XDBzslcKqnn8TjK"}/>
                     <Origin left={310} top={800} parent={"B Heaven Lurk"} style={"t"}
-                    name={"blurk"} url={""}/>
+                    name={"blurk"} url={"https://www.youtube.com/embed/5n3PooZfg90?si=58msHBu-SEB9hMjW"}/>
                     <Origin left={98} top={120} parent={"Camera"} style={"jtr"}
-                    name={"camera"} url={""}/>
+                    name={"camera"} url={"https://www.youtube.com/embed/0J8VJVyKSJ4?si=9kM8kmVd1pmv9M2p"}/>
                     <Origin left={865} top={670} parent={"Main"} style={"jtr"}
-                    name={"main"} url={""} info={"Throw when crosshair reaches the gutter"} ct={true}/>
+                    name={"main"} url={"https://www.youtube.com/embed/rszvIgElxoQ?si=7xV3ZDA_ZPYOZ9OU"} info={"Throw when crosshair reaches the gutter"} ct={true}/>
                     <Origin left={410} top={140} parent={"Pop Dog"} style={"t"}
-                    name={"popdog"} url={""}/>
+                    name={"popdog"} url={"https://www.youtube.com/embed/QFGiqJU-bh8?si=Ot7uHrVlySdpoxn9"}/>
                     <Origin left={98} top={120} parent={"Red-Yellow"} style={"jt"}
-                    name={"redyellow"} url={""}/>
+                    name={"redyellow"} url={"https://www.youtube.com/embed/NsUrJHk6pSA?si=OXv3I3pKdPf9VHod"}/>
                     <Origin left={265} top={615} parent={"Lower"} style={"t"}
-                    name={"shortlower"} url={""} info={"Crouch while throwing"}/>
+                    name={"shortlower"} url={"https://www.youtube.com/embed/q1a2xHWHwVI?si=pHuRus6fx-bE8r9A"} info={"Crouch while throwing"}/>
 
                     <Callout left={60} top={135} name={"T SPAWN"} size={30}/>
                     <Callout left={370} top={135} name={"DUMPSTER"}/>

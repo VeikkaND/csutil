@@ -31,7 +31,7 @@ function Tutorial() {
         <div className="tutorial" style={{
             display: tutorial == null ? "none" : "block"}}>
             <div className="topbar">
-                <p>{selected}</p>
+                <h2>{selected}</h2>
                 <button onClick={handleClose}>
                     <img src={"close.svg"} id="close"></img>
                 </button>

@@ -156,7 +156,7 @@ img {
 
 .tutorial {
   position: absolute;
-  border: solid 1px white;
+  border: solid 1px gray;
   width: 90%;
   height: 90%;
   left: 0;
@@ -174,10 +174,9 @@ img {
   margin-bottom: 20px;
 }
 
-.tutorial .topbar p {
+.tutorial .topbar h2 {
   margin: auto;
   margin-left: 20px;
-  cursor: pointer;
   font-size: 25px;
   padding-bottom: 5px;
   padding-right: 5%;

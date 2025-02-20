@@ -45,7 +45,7 @@ function Mirage() {
                     <Origin left={475} top={180} parent={"B Site"} style={"t"}
                     name={"bsite"} url={"https://www.youtube.com/embed/N8qeJaVHdU4?si=bjoejQj6cQHcAJVm"}/>
                     <Origin left={575} top={135} parent={"Market Window"} style={"jt"}
-                    name={"marketwindow"} url={"https://www.youtube.com/embed/biphvyW833w?si=xM33ACQzcuctYwNk"}/>
+                    name={"marketwindow"} url={"https://www.youtube.com/embed/biphvyW833w?si=xM33ACQzcuctYwNk"} info={"Aim above dark spot"}/>
                     <Origin left={575} top={135} parent={"Market Door"} style={"jt"}
                     name={"marketdoor"} url={"https://www.youtube.com/embed/hbdzN8JQHuU?si=l5LjET1Ly25qySfz"}/>
                     <Origin left={730} top={470} parent={"Jungle"} style={"jt"}

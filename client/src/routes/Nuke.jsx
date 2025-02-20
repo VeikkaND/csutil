@@ -25,19 +25,19 @@ function Nuke() {
                     <Smoke left={460} top={600} name={"Outside T"}/>
 
                     <Origin left={290} top={510} parent={"A Site"} style={"jt"}
-                    name={"asite"} url={""}/>
+                    name={"asite"} url={"https://www.youtube.com/embed/5RnZWiW0iZ0?si=Th3nrZ5fesHVBEsn"}/>
                     <Origin left={590} top={515} parent={"Outside CT"} style={"tr"}
-                    name={"ctoutside"} url={""} ct={true}/>
+                    name={"ctoutside"} url={"https://www.youtube.com/embed/tUKxNCqMXfE?si=-qf50-PZgMQThTh2"} ct={true}/>
                     <Origin left={270} top={503} parent={"Outside 1"} style={"jt"}
-                    name={"outside1_1"} url={""}/>
+                    name={"outside1_1"} url={"https://www.youtube.com/embed/L5U6X1OZjH0?si=0RbuKwqaTtfFNpDB"}/>
                     <Origin left={260} top={486} parent={"Outside 1"} style={"jt"}
-                    name={"outside1_2"} url={""}/>
+                    name={"outside1_2"} url={"https://www.youtube.com/embed/Ah4rsclY0vM?si=hpytqWJxoHgOK8DR"}/>
                     <Origin left={270} top={503} parent={"Outside 2"} style={"jt"}
-                    name={"outside2_1"} url={""}/>
+                    name={"outside2_1"} url={"https://www.youtube.com/embed/lxzSGRI5_Y4?si=lDfwpWb6EUrjPz3J"}/>
                     <Origin left={260} top={486} parent={"Outside 2"} style={"jt"}
-                    name={"outside2_2"} url={""}/>
+                    name={"outside2_2"} url={"https://www.youtube.com/embed/R6pG8Z4JuOc?si=FLU7M2FX_ABFViid"}/>
                     <Origin left={370} top={550} parent={"Outside T"} style={"tr"}
-                    name={"outside3"} url={""}/>
+                    name={"outside3"} url={"https://www.youtube.com/embed/ql72Z6ZEavY?si=rmwPmh55GlgRmEab"}/>
 
                     <Callout left={120} top={475} name={"T SPAWN"} size={30}/>
                     <Callout left={390} top={470} name={"LOBBY"} size={25}/>
