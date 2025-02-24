@@ -3,7 +3,7 @@ body {
   font-family: "Franklin Gothic Medium";
 }
 
-h1 {
+.navbar h1 {
   border-bottom: solid 2px white;
   margin: auto;
   width: fit-content;
@@ -13,20 +13,37 @@ h1 {
   transition-duration: 0.4s;
 }
 
-h1:hover {
+.navbar h1:hover {
   cursor: pointer;
   padding-inline: 50px;
   transition-duration: 0.4s;
 }
 
-h1::before {
+.navbar h1::before {
   content: "CS";
   color: rgb(255, 183, 50);
 }
 
-h1::after {
+.navbar h1::after {
   content: "util";
   color: rgb(50, 78, 172);
+}
+
+.welcome {
+  margin: auto;
+  width: fit-content;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.welcome h1 {
+  color: white;
+  text-align: center;
+}
+
+.welcome p {
+  font-size: 17px;
+  color: white;
 }
 
 .footer {
@@ -57,10 +74,6 @@ h1::after {
 #bmcImage {
   height: 40px;
   width: 142px;
-}
-
-#bmcImage:hover {
-  
 }
 
 .mapbuttons {

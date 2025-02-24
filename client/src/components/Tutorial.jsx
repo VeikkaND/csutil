@@ -33,7 +33,7 @@ function Tutorial() {
             <div className="topbar">
                 <h2>{selected}</h2>
                 <button onClick={handleClose}>
-                    <img src={"close.svg"} id="close"></img>
+                    <img src={"close.svg"} id="close" alt="Close tutorial button"></img>
                 </button>
             </div>
             <div className="content">
@@ -46,15 +46,15 @@ function Tutorial() {
                     <p>loading video...</p>
                 )}
                 <div className="info">
-                    <img src={`${map}/${tutorial}.png`}></img>
+                    <img src={`${map}/${tutorial}.png`} alt="Precise lineup"></img>
                     <p>{style}</p>
                     <div className="symbols">
-                        {style == "Left Click + Jump" ? <span><img src={"m1.svg"}></img><p>+</p><img src={"space.svg"} id="space"></img></span>
-                        : style == "Left Right Click + Jump" ? <span><img src={"m3.svg"}></img><p>+</p><img src={"space.svg"} id="space"></img></span>
-                        : style == "Left Right Click" ? <span><img src={"m3.svg"}></img></span>
-                        : style == "Left Click + Jump + Run" ? <span><img src={"m1.svg"}></img><p>+</p><img src={"space.svg"} id="space"></img><p>+</p><img src={"w.svg"} id="w"></img></span>
-                        : style == "Left Click + Run" ? <span><img src={"m1.svg"}></img><p>+</p><img src={"w.svg"} id="w"></img></span>
-                        : <span><img src={"m1.svg"}></img></span>}
+                        {style == "Left Click + Jump" ? <span><img src={"m1.svg"} alt="Mouse 1"></img><p>+</p><img src={"space.svg"} id="space" alt="Space"></img></span>
+                        : style == "Left Right Click + Jump" ? <span><img src={"m3.svg"} alt="Mouse 1 and 2"></img><p>+</p><img src={"space.svg"} id="space" alt="Space"></img></span>
+                        : style == "Left Right Click" ? <span><img src={"m3.svg"} alt="Mouse 1 and 2"></img></span>
+                        : style == "Left Click + Jump + Run" ? <span><img src={"m1.svg"} alt="Mouse 1"></img><p>+</p><img src={"space.svg"} id="space" alt="Space"></img><p>+</p><img src={"w.svg"} id="w" alt="W"></img></span>
+                        : style == "Left Click + Run" ? <span><img src={"m1.svg"} alt="Mouse 1"></img><p>+</p><img src={"w.svg"} id="w" alt="W"></img></span>
+                        : <span><img src={"m1.svg"} alt="Mouse 1"></img></span>}
                     </div>
                     {info && <p id="info">{info}</p>}
                 </div>

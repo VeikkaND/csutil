@@ -16,7 +16,7 @@ function MapButton({name, text}) {
             backgroundImage: `linear-gradient(rgba(0,0,0,0.3), 
             rgba(0,0,0,0.3)), url(thumbnails/${name}_thumb.png)`
         }}>
-            <img src={`icons/${name}_icon.png`} id="icon"></img>
+            <img src={`icons/${name}_icon.png`} id="icon" alt={`${name} icon`}></img>
             <p>{text}</p>
         </button>
     )

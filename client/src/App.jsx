@@ -8,6 +8,11 @@ function App() {
   return(
     <div>
       <NavBar />
+      <div className='welcome'>
+        <h1 id='welcomeHeader'>Welcome to CSutil.app!</h1>
+        <p>CSutil.app is a place for learning CS2 lineups and 
+          callouts to improve your gameplay.</p>
+      </div>
       <div className='mapbuttons'>
         <MapButton name={"dust2"} text={"Dust 2"}/>
         <MapButton name={"mirage"} text={"Mirage"}/>
