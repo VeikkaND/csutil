@@ -158,7 +158,7 @@ img {
   position: absolute;
   border: solid 1px gray;
   width: 90%;
-  height: 90%;
+  height: 80%;
   left: 0;
   right: 0;
   margin: auto;
@@ -213,8 +213,8 @@ img {
 
 .tutorial .content iframe {
   aspect-ratio: 16 / 9;
-  height: 90%;
-  width: 90%;
+  height: 70%;
+  width: 70%;
 }
 
 .tutorial .content .info {
@@ -233,7 +233,34 @@ img {
   margin-bottom: 10px;
 }
 
+.tutorial .content .info .symbols span {
+  display: flex;
+  justify-content: center;
+}
+
+.tutorial .content .info .symbols span p {
+  font-size: 30px;
+  margin-inline: 15px;
+}
+
+.tutorial .content .info .symbols img {
+  width: 70px;
+  height: 70px;
+}
+
+#space {
+  height: 55px;
+  align-self:flex-end
+}
+
+#w {
+  width: 30px;
+  height: 55px;
+  align-self: flex-end;
+}
+
 .tutorial .content .info #info {
+  margin-top: 10px;
   font-family: 'Franklin Gothic'
 }
 

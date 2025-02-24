@@ -48,6 +48,14 @@ function Tutorial() {
                 <div className="info">
                     <img src={`${map}/${tutorial}.png`}></img>
                     <p>{style}</p>
+                    <div className="symbols">
+                        {style == "Left Click + Jump" ? <span><img src={"m1.svg"}></img><p>+</p><img src={"space.svg"} id="space"></img></span>
+                        : style == "Left Right Click + Jump" ? <span><img src={"m3.svg"}></img><p>+</p><img src={"space.svg"} id="space"></img></span>
+                        : style == "Left Right Click" ? <span><img src={"m3.svg"}></img></span>
+                        : style == "Left Click + Jump + Run" ? <span><img src={"m1.svg"}></img><p>+</p><img src={"space.svg"} id="space"></img><p>+</p><img src={"w.svg"} id="w"></img></span>
+                        : style == "Left Click + Run" ? <span><img src={"m1.svg"}></img><p>+</p><img src={"w.svg"} id="w"></img></span>
+                        : <span><img src={"m1.svg"}></img></span>}
+                    </div>
                     {info && <p id="info">{info}</p>}
                 </div>
             </div>
