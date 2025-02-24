@@ -2,7 +2,7 @@ import { TransformComponent, TransformWrapper } from "react-zoom-pan-pinch";
 import NavBar from "../components/NavBar";
 import ToolBar from "../components/Toolbar";
 import Tutorial from "../components/Tutorial";
-import inferno from "../../../maps/inferno.png"
+import inferno from "/maps/inferno.png"
 import Callout from "../components/Callout";
 import Smoke from "../components/Smoke";
 import Origin from "../components/Origin";
@@ -29,25 +29,25 @@ function Inferno() {
                     <Smoke left={750} top={660} name={"Truck"}/>
 
                     <Origin left={480} top={725} parent={"Arch"} style={"jt"}
-                    name={"arch"} url={""}/>
+                    name={"arch"} url={"https://www.youtube.com/embed/aOUjQ7VkADY?si=k93QhKVcYNANTorP"}/>
                     <Origin left={720} top={465} parent={"A - Retake"} style={"jt2"}
-                    name={"aretake"} url={""} ct={true}/>
+                    name={"aretake"} url={"https://www.youtube.com/embed/iZtuIjoUjgM?si=k0-Q6Cga9uCx7vnN"} ct={true}/>
                     <Origin left={660} top={730} parent={"Balcony Lurk"} style={"t"}
-                    name={"balconylurk"} url={""}/>
+                    name={"balconylurk"} url={"https://www.youtube.com/embed/gy_PBEnN8yg?si=90L-BWMFsG6wRtpd"}/>
                     <Origin left={435} top={370} parent={"Coffin"} style={"jt"}
-                    name={"arch"} url={""}/>
-                    <Origin left={415} top={400} parent={"CT - Boost"} style={"jt"}
-                    name={"ctboost"} url={""}/>
+                    name={"coffin"} url={"https://www.youtube.com/embed/7M-EMVp-Eb8?si=bNW4WI2bnRWxWM43"}/>
+                    <Origin left={415} top={400} parent={"CT - Boost"} style={"t"}
+                    name={"ctboost"} url={"https://www.youtube.com/embed/g4wYNqyrcj4?si=toV8zIcWu1xQ0rNW"}/>
                     <Origin left={495} top={650} parent={"Long"} style={"jt"}
-                    name={"long"} url={""}/>
+                    name={"long"} url={"https://www.youtube.com/embed/ZIYnKL17NOM?si=WyPrlU-xuF-msdbs"}/>
                     <Origin left={480} top={725} parent={"Moto"} style={"jt"}
-                    name={"moto"} url={""}/>
+                    name={"moto"} url={"https://www.youtube.com/embed/9bOsg4M5jdk?si=b1pWl3ocOAYnu32u"}/>
                     <Origin left={200} top={585} parent={"Top Mid"} style={"jt"}
-                    name={"topmid"} url={""}/>
+                    name={"topmid"} url={"https://www.youtube.com/embed/uVEvy4z0Mzk?si=rV8U9IUgTRXduiHf"}/>
                     <Origin left={480} top={725} parent={"Truck"} style={"t"}
-                    name={"truck"} url={""} info={"Crouch while throwing"}/>
+                    name={"truck"} url={"https://www.youtube.com/embed/fuR0cFM7NeA?si=RQ1TZHg9Sl5AhfKd"} info={"Crouch while throwing"}/>
                     <Origin left={595} top={630} parent={"Truck"} style={"t"}
-                    name={"truck2"} url={""}/>
+                    name={"truck2"} url={"https://www.youtube.com/embed/i_q4GHjuD_Y?si=z61CX3ZgkfJBogL6"}/>
 
                     <Callout left={30} top={590} name={"T SPAWN"} size={30}/>
                     <Callout left={320} top={535} name={"T RAMP"} size={20}/>

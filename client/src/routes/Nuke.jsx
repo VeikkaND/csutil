@@ -2,7 +2,7 @@ import { TransformComponent, TransformWrapper } from "react-zoom-pan-pinch";
 import NavBar from "../components/NavBar";
 import ToolBar from "../components/Toolbar";
 import Tutorial from "../components/Tutorial";
-import nuke from "../../../maps/nuke.png"
+import nuke from "/maps/nuke.png"
 import Callout from "../components/Callout";
 import Smoke from "../components/Smoke";
 import Origin from "../components/Origin";

@@ -2,7 +2,7 @@ import { TransformComponent, TransformWrapper } from "react-zoom-pan-pinch";
 import NavBar from "../components/NavBar";
 import ToolBar from "../components/Toolbar";
 import Tutorial from "../components/Tutorial";
-import anubis from "../../../maps/anubis.png"
+import anubis from "/maps/anubis.png";
 import Callout from "../components/Callout";
 import Smoke from "../components/Smoke";
 import Origin from "../components/Origin";
@@ -28,21 +28,21 @@ function Anubis() {
                     <Smoke left={430} top={400} name={"Window"}/>
 
                     <Origin left={205} top={615} parent={"Connector"} style={"t"}
-                    name={"bconn"} url={""}/>
+                    name={"bconn"} url={"https://www.youtube.com/embed/SphV38sFgJ0?si=7JQzQh8h2DdO5N8O"}/>
                     <Origin left={685} top={460} parent={"A Connector"} style={"t"}
-                    name={"camera"} url={""}/>
+                    name={"camera"} url={"https://www.youtube.com/embed/zCxynlX-kno?si=VAxZa2uiOkFTxYB7"}/>
                     <Origin left={605} top={690} parent={"Connector - Water"} style={"jt"}
-                    name={"connwater"} url={""}/>
+                    name={"connwater"} url={"https://www.youtube.com/embed/wWZQwEahY_g?si=ItwNOqIdROMQn9DJ"}/>
                     <Origin left={660} top={445} parent={"Heaven"} style={"jt"}
-                    name={"heaven"} url={""}/>
+                    name={"heaven"} url={"https://www.youtube.com/embed/aUG54yUgMms?si=OnIFXMUxvuilp1r6"}/>
                     <Origin left={300} top={800} parent={"Palace"} style={"jt"}
-                    name={"palace"} url={""}/>
+                    name={"palace"} url={"https://www.youtube.com/embed/tTpgJKFX9TM?si=syP5qyv--PWdvD3R"}/>
                     <Origin left={660} top={445} parent={"Plat"} style={"jt"}
-                    name={"plat"} url={""}/>
+                    name={"plat"} url={"https://www.youtube.com/embed/h73w5h1QLNk?si=h_W-emr0AIlTB10j"}/>
                     <Origin left={225} top={635} parent={"Street"} style={"t"}
-                    name={"street"} url={""}/>
+                    name={"street"} url={"https://www.youtube.com/embed/Z2dfcKxYlr8?si=NEU5e-QlCIRqNQEg"}/>
                     <Origin left={465} top={860} parent={"Window"} style={"jt"}
-                    name={"window"} url={""}/>
+                    name={"window"} url={"https://www.youtube.com/embed/hz6YSPWe5P0?si=COOtNJJNdNKW6z_Y"}/>
 
                     <Callout left={310} top={180} name={"CT SPAWN"} size={30}/>
                     <Callout left={400} top={80} name={"BEACH"} size={25}/>

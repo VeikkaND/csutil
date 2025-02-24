@@ -3,7 +3,7 @@ import { TransformWrapper,
     TransformComponent } from "react-zoom-pan-pinch"
 import ToolBar from "../components/Toolbar"
 import Smoke from "../components/Smoke"
-import dust2 from "../../../maps/dust2.png"
+import dust2 from "/maps/dust2.png"
 import NavBar from "../components/NavBar"
 import Origin from "../components/Origin"
 import Callout from "../components/Callout"

@@ -2,7 +2,7 @@ import { TransformComponent, TransformWrapper } from "react-zoom-pan-pinch";
 import NavBar from "../components/NavBar";
 import ToolBar from "../components/Toolbar";
 import Tutorial from "../components/Tutorial";
-import ancient from "../../../maps/ancient.png"
+import ancient from "/maps/ancient.png"
 import Callout from "../components/Callout";
 import Smoke from "../components/Smoke";
 import Origin from "../components/Origin";
@@ -29,29 +29,29 @@ function Ancient() {
                     <Smoke left={410} top={305} name={"Top Mid"}/>
 
                     <Origin left={115} top={525} parent={"Donut - A"} style={"jt"}
-                    name={"adonut"} url={""}/>
+                    name={"adonut"} url={"https://www.youtube.com/embed/BK0Yt1bYPJk?si=L4Dev_bRRFdCA5fp"}/>
                     <Origin left={815} top={660} parent={"Cave"} style={"jt"}
-                    name={"cave"} url={""}/>
+                    name={"cave"} url={"https://www.youtube.com/embed/hnJUmsdmvuA?si=gehRV7M0d3QBdeQQ"}/>
                     <Origin left={385} top={835} parent={"Cheetah"} style={"jt"}
-                    name={"cave_entrance"} url={""}/>
+                    name={"cave_entrance"} url={"https://www.youtube.com/embed/6cTQMoLrny4?si=QblCF8PpphG6XS-5"}/>
                     <Origin left={265} top={630} parent={"CT"} style={"jt"}
-                    name={"ct1"} url={""}/>
+                    name={"ct1"} url={"https://www.youtube.com/embed/8tr50C27WKU?si=OZ_yu3EdrGC-oOxp"}/>
                     <Origin left={290} top={650} parent={"CT"} style={"jt"}
-                    name={"ct2"} url={""}/>
+                    name={"ct2"} url={"https://www.youtube.com/embed/ULtEF3FMBAE?si=PzVIkPGBv1vXdpPn"}/>
                     <Origin left={115} top={525} parent={"CT"} style={"jt"}
-                    name={"ct3"} url={""}/>
+                    name={"ct3"} url={"https://www.youtube.com/embed/-l3G4j0KdMQ?si=MmslX8co4cdiNBR_"}/>
                     <Origin left={385} top={795} parent={"Donut - Mid"} style={"jt"}
-                    name={"donut"} url={""}/>
+                    name={"donut"} url={"https://www.youtube.com/embed/VYINTMlTA6Y?si=I1f9DZAPQk6yDjLv"}/>
                     <Origin left={815} top={660} parent={"Long"} style={"jt"}
-                    name={"long"} url={""}/>
+                    name={"long"} url={"https://www.youtube.com/embed/2RT0kZN_jog?si=xLXxcL9wJv0su_SZ"}/>
                     <Origin left={777} top={560} parent={"Short"} style={"t"}
-                    name={"short1"} url={""}/>
+                    name={"short1"} url={"https://www.youtube.com/embed/xw0C_SO_kdE?si=-H3Fvs-iurUnhNtt"}/>
                     <Origin left={815} top={660} parent={"Short"} style={"jt"}
-                    name={"short2"} url={""}/>
+                    name={"short2"} url={"https://www.youtube.com/embed/VMHwMpA5hpE?si=kxqe0WZwvydlhD-J"}/>
                     <Origin left={115} top={525} parent={"Temple"} style={"jt"}
-                    name={"temple"} url={""}/>
+                    name={"temple"} url={"https://www.youtube.com/embed/qFe-N_Q0krM?si=_6vYojP4_eKbqCDe"}/>
                     <Origin left={400} top={780} parent={"Top Mid"} style={"jt"}
-                    name={"topmid"} url={""}/>
+                    name={"topmid"} url={"https://www.youtube.com/embed/ZUhlJL4_Zu4?si=jMqJcxtH3d3ACysu"}/>
 
                     <Callout left={70} top={135} name={"PLAT"}/>
                     <Callout left={90} top={160} name={"SINGLE"} size={13}/>
