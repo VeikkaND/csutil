@@ -1,5 +1,6 @@
 import NavBar from './components/NavBar'
 import MapButton from './components/MapButton'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <MapButton name={"ancient"} text={"Ancient"}/>
         <MapButton name={"anubis"} text={"Anubis"}/>
       </div>
+      <Footer />
     </div>
   )
 }

@@ -6,6 +6,7 @@ import inferno from "/maps/inferno.png"
 import Callout from "../components/Callout";
 import Smoke from "../components/Smoke";
 import Origin from "../components/Origin";
+import Footer from "../components/Footer";
 
 function Inferno() {
 
@@ -93,6 +94,7 @@ function Inferno() {
                     <Callout left={427} top={160} name={"B"}/>
                 </TransformComponent>
             </TransformWrapper>
+            <Footer />
         </div>
     )
 }

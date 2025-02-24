@@ -29,10 +29,45 @@ h1::after {
   color: rgb(50, 78, 172);
 }
 
+.footer {
+  display: flex;
+  background-color: #313131;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+  gap: 200px;
+}
+
+.footer h4 {
+  font-size: 20px;
+}
+
+.footer p {
+  font-family: "Franklin Gothic";
+}
+
+.footer h4, p {
+  color: gainsboro;
+}
+
+#bmcImage {
+  height: 40px;
+  width: 142px;
+}
+
+#bmcImage:hover {
+  
+}
+
 .mapbuttons {
   margin: auto;
   width: fit-content;
   margin-top: 50px;
+  margin-bottom: 200px;
 }
 
 .mapbuttons button {

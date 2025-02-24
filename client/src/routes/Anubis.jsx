@@ -6,6 +6,7 @@ import anubis from "/maps/anubis.png";
 import Callout from "../components/Callout";
 import Smoke from "../components/Smoke";
 import Origin from "../components/Origin";
+import Footer from "../components/Footer";
 
 function Anubis() {
 
@@ -87,6 +88,7 @@ function Anubis() {
                     <Callout left={275} top={431} name={"B"}/>
                 </TransformComponent>
             </TransformWrapper>
+            <Footer />
         </div>
     )
 }

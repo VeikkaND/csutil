@@ -6,6 +6,7 @@ import train from "/maps/train.png"
 import Callout from "../components/Callout";
 import Smoke from "../components/Smoke";
 import Origin from "../components/Origin";
+import Footer from "../components/Footer";
 
 function Train() {
 
@@ -93,6 +94,7 @@ function Train() {
                     <Callout left={480} top={710} name={"B"}/>
                 </TransformComponent>
             </TransformWrapper>
+            <Footer />
         </div>
     )
 }

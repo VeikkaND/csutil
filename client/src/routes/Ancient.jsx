@@ -6,6 +6,7 @@ import ancient from "/maps/ancient.png"
 import Callout from "../components/Callout";
 import Smoke from "../components/Smoke";
 import Origin from "../components/Origin";
+import Footer from "../components/Footer";
 
 function Ancient() {
 
@@ -90,6 +91,7 @@ function Ancient() {
                     <Callout left={770} top={350} name={"B"}/>
                 </TransformComponent>
             </TransformWrapper>
+            <Footer />
         </div>
     )
 }

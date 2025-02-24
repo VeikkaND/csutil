@@ -6,6 +6,7 @@ import nuke from "/maps/nuke.png"
 import Callout from "../components/Callout";
 import Smoke from "../components/Smoke";
 import Origin from "../components/Origin";
+import Footer from "../components/Footer";
 
 function Nuke() {
 
@@ -59,6 +60,7 @@ function Nuke() {
                     <Callout left={510} top={440} name={"A"}/>
                 </TransformComponent>
             </TransformWrapper>
+            <Footer />
         </div>
     )
 }

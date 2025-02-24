@@ -7,6 +7,7 @@ import Callout from "../components/Callout";
 import Smoke from "../components/Smoke";
 import Origin from "../components/Origin";
 import Tutorial from "../components/Tutorial";
+import Footer from "../components/Footer";
 
 function Mirage() {
 
@@ -103,6 +104,7 @@ function Mirage() {
                     <Callout left={195} top={240} name={"B"}/>
                 </TransformComponent>
             </TransformWrapper>
+            <Footer />
         </div>
     )
 }

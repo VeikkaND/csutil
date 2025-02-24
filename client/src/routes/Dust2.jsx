@@ -1,4 +1,3 @@
-import { useSelector } from "react-redux"
 import { TransformWrapper, 
     TransformComponent } from "react-zoom-pan-pinch"
 import ToolBar from "../components/Toolbar"
@@ -8,6 +7,7 @@ import NavBar from "../components/NavBar"
 import Origin from "../components/Origin"
 import Callout from "../components/Callout"
 import Tutorial from "../components/Tutorial"
+import Footer from "../components/Footer"
 
 function Dust2() {
 
@@ -105,6 +105,7 @@ function Dust2() {
                 <Callout left={290} top={795} name={"T SPAWN"} size={30}/>
             </TransformComponent>
         </TransformWrapper>
+        <Footer />
     </div>
     )
 }
