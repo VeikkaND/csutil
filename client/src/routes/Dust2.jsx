@@ -8,9 +8,15 @@ import Origin from "../components/Origin"
 import Callout from "../components/Callout"
 import Tutorial from "../components/Tutorial"
 import Footer from "../components/Footer"
+import { useDispatch } from "react-redux"
+import { setMap } from "../reducers/mapSlice"
+import { useEffect } from "react"
 
 function Dust2() {
-
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(setMap("dust2"))
+    }, [])
 
     return(
     <div>

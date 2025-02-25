@@ -8,8 +8,15 @@ import Smoke from "../components/Smoke";
 import Origin from "../components/Origin";
 import Tutorial from "../components/Tutorial";
 import Footer from "../components/Footer";
+import { useEffect } from "react";
+import { setMap } from "../reducers/mapSlice";
+import { useDispatch } from "react-redux";
 
 function Mirage() {
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(setMap("mirage"))
+    }, [])
 
     return(
         <div>

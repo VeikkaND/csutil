@@ -7,8 +7,15 @@ import Callout from "../components/Callout";
 import Smoke from "../components/Smoke";
 import Origin from "../components/Origin";
 import Footer from "../components/Footer";
+import { useDispatch } from "react-redux";
+import { setMap } from "../reducers/mapSlice";
+import { useEffect } from "react";
 
 function Nuke() {
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(setMap("nuke"))
+    }, [])
 
     return(
         <div>
