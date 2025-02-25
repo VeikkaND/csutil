@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import store from './store.js'
 import { Provider } from "react-redux"
-import { BrowserRouter, Routes, Route } from "react-router"
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router"
 import Dust2 from "./routes/Dust2.jsx"
 import Mirage from "./routes/Mirage.jsx"
 import Nuke from './routes/Nuke.jsx'
@@ -17,7 +17,7 @@ import Anubis from './routes/Anubis.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path='/' element={<App />}/>
           <Route path='/dust2' element={<Dust2 />}/>
@@ -28,7 +28,7 @@ createRoot(document.getElementById('root')).render(
           <Route path='/ancient' element={<Ancient />}/>
           <Route path='/anubis' element={<Anubis />}/>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </Provider>
   </StrictMode>,
 )
