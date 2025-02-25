@@ -10,12 +10,20 @@ import { resetStyle } from "../reducers/styleSlice"
 import { resetTutorial } from "../reducers/tutorialSlice"
 import { resetCords } from "../reducers/cordsSlice"
 import { resetInfo } from "../reducers/infoSlice"
+import { useNavigate } from "react-router"
 
 function ToolBar() {
     const [callouts, toggleCallouts] = useState(true)
     const [smokes, toggleSmokes] = useState(true)
     const selected = useSelector((state) => state.smoke.value)
     const dispatch = useDispatch()
+    const navigate = useNavigate()
+
+    const handleBack = () => {
+        dispatch(setCallouts(true))
+        dispatch(setSmokes(true))
+        navigate("/")
+    }
 
     const handleCallouts = () => {
         const val = !callouts
@@ -42,16 +50,24 @@ function ToolBar() {
 
     return(
         <div className="toolbar">
-            <div className="tool">
-                <input type="checkbox" name="callouts" 
-                checked={callouts} onChange={handleCallouts}></input>
-                <label>Callouts</label>
+            <div className="back">
+                <button onClick={handleBack}>
+                    Back
+                </button>
             </div>
-            <div className="tool">
-                <input type="checkbox" name="smokes"
-                checked={smokes} onChange={handleSmokes} />
-                <label>Smokes</label>
+            <div className="tools">
+                <div className="tool">
+                    <input type="checkbox" name="callouts" 
+                    checked={callouts} onChange={handleCallouts}></input>
+                    <label>Callouts</label>
+                </div>
+                <div className="tool">
+                    <input type="checkbox" name="smokes"
+                    checked={smokes} onChange={handleSmokes} />
+                    <label>Smokes</label>
+                </div>
             </div>
+            <div className="filler"></div>
         </div>
     )
 }

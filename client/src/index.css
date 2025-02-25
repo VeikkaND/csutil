@@ -134,10 +134,12 @@ img {
 .toolbar {
   display: flex;
   margin: auto;
-  width: fit-content;
+  width: 70%;
+  max-width: 800px;
   margin-bottom: 10px;
   margin-top: 40px;
-  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .toolbar label {
@@ -145,6 +147,39 @@ img {
   font-family: Helvetica;
   font-size: 16px;
   vertical-align: middle;
+}
+
+.toolbar .back {
+  width: 70px;
+}
+
+.toolbar .filler {
+  width: 70px;
+}
+
+.toolbar .back button {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+  background-color:rgb(0, 117, 255) ;
+  color: white;
+  font-size: 16px;
+  padding-block: 5px;
+  padding-inline: 15px;
+  
+}
+
+.toolbar .back button:hover {
+  background-color: rgb(0, 83, 179);
+}
+
+.toolbar .tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  gap: 30px;
 }
 
 .toolbar .tool input {
