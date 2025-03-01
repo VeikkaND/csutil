@@ -25,7 +25,7 @@ function Mirage() {
             <Tutorial />
             <TransformWrapper doubleClick={{disabled: true}}>
                 <TransformComponent wrapperStyle={{margin: "auto"}}>
-                    <img src={mirage}></img>
+                    <img src={mirage} id="map"></img>
 
                     <Smoke left={340} top={385} name={"Window"}/>
                     <Smoke left={550} top={350} name={"Mid Cross"}/>

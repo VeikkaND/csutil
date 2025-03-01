@@ -131,6 +131,11 @@ img {
   width: 900px;
 }
 
+#map {
+  border: solid 1px dimgray;
+  border-radius: 5px;
+}
+
 .toolbar {
   display: flex;
   margin: auto;

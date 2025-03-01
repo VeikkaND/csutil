@@ -24,7 +24,7 @@ function Anubis() {
             <Tutorial />
             <TransformWrapper doubleClick={{disabled: true}}>
                 <TransformComponent wrapperStyle={{margin: "auto"}}>
-                    <img src={anubis}></img>
+                    <img src={anubis} id="map"></img>
 
                     <Smoke left={290} top={480} name={"Connector"}/>
                     <Smoke left={550} top={315} name={"A Connector"}/>

@@ -24,7 +24,7 @@ function Ancient() {
             <Tutorial />
             <TransformWrapper doubleClick={{disabled: true}}>
                 <TransformComponent wrapperStyle={{margin: "auto"}}>
-                    <img src={ancient}></img>
+                    <img src={ancient} id="map"></img>
 
                     <Smoke left={220} top={270} name={"Donut - A"}/>
                     <Smoke left={650} top={315} name={"Cave"}/>

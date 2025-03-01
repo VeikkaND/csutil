@@ -24,7 +24,7 @@ function Train() {
             <Tutorial />
             <TransformWrapper doubleClick={{disabled: true}}>
                 <TransformComponent wrapperStyle={{margin: "auto"}}>
-                    <img src={train}></img>
+                    <img src={train} id="map"></img>
 
                     <Smoke left={527} top={500} name={"Connector - A"}/>
                     <Smoke left={620} top={590} name={"Connector - B"}/>

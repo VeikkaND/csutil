@@ -24,7 +24,7 @@ function Nuke() {
             <Tutorial />
             <TransformWrapper doubleClick={{disabled: true}}>
                 <TransformComponent wrapperStyle={{margin: "auto"}}>
-                    <img src={nuke}></img>
+                    <img src={nuke} id="map"></img>
 
                     <Smoke left={500} top={422} name={"A Site"}/>
                     <Smoke left={485} top={575} name={"Outside CT"}/>

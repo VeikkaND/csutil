@@ -24,7 +24,7 @@ function Inferno() {
             <Tutorial />
             <TransformWrapper doubleClick={{disabled: true}}>
                 <TransformComponent wrapperStyle={{margin: "auto"}}>
-                    <img src={inferno}></img>
+                    <img src={inferno} id="map"></img>
 
                     <Smoke left={675} top={415} name={"Arch"}/>
                     <Smoke left={760} top={620} name={"A - Retake"}/>

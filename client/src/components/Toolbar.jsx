@@ -22,6 +22,7 @@ function ToolBar() {
     const handleBack = () => {
         dispatch(setCallouts(true))
         dispatch(setSmokes(true))
+        resetAll()
         navigate("/")
     }
 
@@ -38,14 +39,18 @@ function ToolBar() {
         // reset selected smoke if toggling smokes while
         // having one selected
         if(!val && selected) { 
-            dispatch(resetSmoke())
-            dispatch(resetID())
-            dispatch(resetUrl())
-            dispatch(resetStyle())
-            dispatch(resetTutorial())
-            dispatch(resetCords())
-            dispatch(resetInfo())
+            resetAll()
         }
+    }
+
+    const resetAll = () => {
+        dispatch(resetSmoke())
+        dispatch(resetID())
+        dispatch(resetUrl())
+        dispatch(resetStyle())
+        dispatch(resetTutorial())
+        dispatch(resetCords())
+        dispatch(resetInfo())
     }
 
     return(

@@ -25,7 +25,7 @@ function Dust2() {
         <Tutorial />
         <TransformWrapper doubleClick={{disabled: true}}>
             <TransformComponent wrapperStyle={{margin: "auto"}}>
-                <img src={dust2}></img>
+                <img src={dust2} id="map"></img>
                 <Smoke left={200} top={180} name={"B Doors"}/>
                 <Smoke left={200} top={90} name={"Window"}/>
                 <Smoke left={73} top={245} name={"B Lurk"}/>
