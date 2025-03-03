@@ -27,7 +27,7 @@ function Anubis() {
                     <img src={anubis} id="map"></img>
 
                     <Smoke left={290} top={480} name={"Connector"}/>
-                    <Smoke left={550} top={315} name={"A Connector"}/>
+                    <Smoke left={550} top={315} name={"Camera"}/>
                     <Smoke left={350} top={520} name={"Connector - Water"}/>
                     <Smoke left={615} top={165} name={"Heaven"}/>
                     <Smoke left={280} top={350} name={"Palace"}/>
@@ -37,7 +37,7 @@ function Anubis() {
 
                     <Origin left={205} top={615} parent={"Connector"} style={"t"}
                     name={"bconn"} url={"https://www.youtube.com/embed/SphV38sFgJ0?si=7JQzQh8h2DdO5N8O"}/>
-                    <Origin left={685} top={460} parent={"A Connector"} style={"t"}
+                    <Origin left={685} top={460} parent={"Camera"} style={"t"}
                     name={"camera"} url={"https://www.youtube.com/embed/zCxynlX-kno?si=VAxZa2uiOkFTxYB7"}/>
                     <Origin left={605} top={690} parent={"Connector - Water"} style={"jt"}
                     name={"connwater"} url={"https://www.youtube.com/embed/wWZQwEahY_g?si=ItwNOqIdROMQn9DJ"}/>
@@ -56,7 +56,7 @@ function Anubis() {
                     <Callout left={400} top={80} name={"BEACH"} size={25}/>
                     <Callout left={510} top={210} name={"TUNNEL"} size={20} rotate={30}/>
                     <Callout left={585} top={200} name={"HEAVEN"} rotate={-50}/>
-                    <Callout left={510} top={335} name={"A CONNECTOR"}/>
+                    <Callout left={510} top={335} name={"CAMERA"}/>
                     <Callout left={485} top={360} name={"MID"} size={25}/>
                     <Callout left={600} top={300} name={"PLAT"} size={20}/>
                     <Callout left={750} top={220} name={"FOUNTAIN"}/>
